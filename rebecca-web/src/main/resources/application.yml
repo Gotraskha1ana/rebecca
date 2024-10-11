@@ -1,0 +1,162 @@
+spring:
+  profiles:
+    active: dev # 激活的环境
+  application:
+    name: rebecca # 应用名称
+
+  datasource:
+    # 数据库配置
+    url: jdbc:mysql://${rebecca.database.ip:localhost}:${rebecca.database.port:3306}/rebecca?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: ${rebecca.database.username:Joker}
+    password: ${rebecca.database.password:Ricardoc297}
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      minimum-idle: 10 # HikariCP连接池最小空闲连接数
+      maximum-pool-size: 30 # HikariCP连接池最大连接数
+      auto-commit: true # 是否自动提交
+      idle-timeout: 30000 # 空闲连接的超时时间
+      pool-name: HikariCP # 连接池名称
+      max-lifetime: 900000 # 连接的最大生存时间
+      connection-timeout: 10000 # 连接超时时间
+      connection-test-query: SELECT 1 # 测试连接的SQL查询
+      validation-timeout: 1000 # 连接验证超时
+
+  redis:
+    # Redis配置
+    host: ${rebecca.redis.ip:localhost}
+    port: ${rebecca.redis.port:6379}
+    password: ${rebecca.redis.password:austin} #todo 改密码
+
+rebecca:
+  business:
+    topic:
+      name: rebeccaBusinessTopic # 业务Topic名称
+    recall:
+      topic:
+        name: rebeccaRecall # 撤回Topic名称
+      group:
+        name: recallGroupId # 撤回组名称
+    log:
+      topic:
+        name: rebeccaTraceLog # 日志Topic名称
+    tagId:
+      key: kafka_tag_id # Kafka Tag过滤Key
+      value: com.ricardo.rebecca # Kafka Tag过滤Value
+
+  kafka:
+    # Kafka配置
+    bootstrap-servers: ${rebecca.kafka.ip:rebecca-kafka}:${rebecca.kafka.port:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest # 消费者偏移量重置策略
+      auto-commit-interval: 1000 # 自动提交间隔
+      enable-auto-commit: true # 是否启用自动提交
+
+rocketmq:
+  # RocketMQ配置
+  name-server: ${rebecca.rocketmq.nameserver.ip:}:${rebecca.rocketmq.nameserver.port:}
+  producer:
+    group: unique-producer-group # 生产者组
+  biz:
+    consumer:
+      group: unique-biz-consumer-group # 业务消费者组
+  recall:
+    consumer:
+      group: unique-recall-consumer-group # 撤回消费者组
+
+rabbitmq:
+  # RabbitMQ配置
+  host: ${rebecca.rabbitmq.ip:}
+  port: ${rebecca.rabbitmq.port:}
+  username: root
+  password: 123456
+  publisher-confirm-type: correlated # 发布者确认类型
+  publisher-returns: true # 是否启用发布者返回机制
+  virtual-host: / # 虚拟主机
+  queues: rebecca_queues # 队列名称
+  exchange:
+    name: rebecca.point # 交换机名称
+  routing:
+    key: rebecca_KEY # 路由Key
+
+xxl:
+  job:
+    # XXL Job配置
+    admin:
+      addresses: http://${rebecca.xxl.job.ip:rebecca-xxl-job}:${rebecca.xxl.job.port:8080}/xxl-job-admin # 管理员地址
+      username: ${rebecca.xxl.job.username:admin} # 管理员用户名
+      password: ${rebecca.xxl.job.password:123456} # 管理员密码
+    executor:
+      appname: ${rebecca.xxl.job.executor.appname:rebecca} # 执行器名称
+      jobHandlerName: ${rebecca.xxl.job.executor.jobHandlerName:rebecca} # 任务处理器名称
+      address: ${rebecca.xxl.job.address:} # 执行器地址
+      ip: "" # 执行器IP
+      port: ${rebecca.xxl.executor.port:6666} # 执行器端口
+      logpath: logs/xxl # 日志路径
+      logretentiondays: 30 # 日志保留天数
+    accessToken: ${rebecca.xxl.job.accessToken:} # 访问令牌
+
+apollo:
+  # Apollo配置
+  bootstrap:
+    enabled: ${rebecca.apollo.enabled:false} # 是否启用Apollo
+    namespaces: ${rebecca.default.apollo.namespace:boss.rebecca},dynamic-tp-apollo-dtp.yml # Apollo命名空间
+  app:
+    id: rebecca # 应用ID
+
+nacos:
+  # Nacos配置
+  config:
+    server-addr: ${rebecca.nacos.addr.ip:rebecca-nacos}:${rebecca.nacos.addr.port:8848} # Nacos服务地址
+    username: ${rebecca.nacos.username:nacos} # Nacos用户名
+    password: ${rebecca.nacos.password:nacos} # Nacos密码
+    namespace: ${rebecca.nacos.namespace:hades} # Nacos命名空间
+    enabled: ${rebecca.nacos.enabled:false} # 是否启用Nacos
+  data-id: ${rebecca.nacos.dataId:rebecca} # Nacos Data ID
+  group: ${rebecca.nacos.group:DEFAULT_GROUP} # Nacos组
+
+hades:
+  # 规则引擎配置
+  enabled: ${rebecca.rule.engine.enabled:false} # 是否启用规则引擎
+  config-name: ${rebecca.rule.engine.file-name:hades} # 规则引擎配置文件名称
+
+graylog:
+  # Graylog配置
+  ip: ${rebecca.graylog:rebecca-graylog} # Graylog IP地址
+
+ok:
+  http:
+    # HTTP请求相关配置
+    connect-timeout: 30 # 连接超时时间
+    keep-alive-duration: 300 # 保持连接时长
+    max-idle-connections: 200 # 最大空闲连接数
+    read-timeout: 30 # 读取超时时间
+    write-timeout: 30 # 写入超时时间
+
+management:
+  # 监控配置
+  endpoint:
+    health:
+      show-details: always # 显示详细健康信息
+    metrics:
+      enabled: true # 启用Metrics
+    prometheus:
+      enabled: true # 启用Prometheus
+  endpoints:
+    web:
+      exposure:
+        include: "*" # 暴露所有端点
+  metrics:
+    export:
+      prometheus:
+        enabled: true # 启用Prometheus导出
+  health:
+    rabbit:
+      enabled: false # 关闭RabbitMQ健康检查
+
+server:
+  shutdown: graceful # 系统优雅关闭

@@ -1,0 +1,19 @@
+server:
+      port: 8081
+rebecca:
+      xxl:
+            job:
+                  enabled: false
+      mq:
+            pipeline: redis
+      apollo:
+            enabled: false
+      nacos:
+            enabled: false
+      rule:
+            engine:
+                  enabled: false
+      business:
+            upload:
+                  crowd:
+                        path: /Users/3y/temp
