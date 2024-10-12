@@ -2,7 +2,7 @@ services:
       rebecca-mysql:
             image: mysql:8.0
             container_name: rebecca-mysql
-            restart: always
+            restart: on-failure:5
             ports:
                   - "3306:3306"
             volumes:
@@ -26,8 +26,8 @@ services:
             image: redis:3.2
             platform: linux/amd64
             ports:
-                  - "6379:6379"
-            restart: always
+                  - "$REDIS_LOCAL_PORT:6379"
+            restart: on-failure:5
             container_name: rebecca-redis
             volumes:
                   - ./doc/docker/redis/redis.conf:/usr/local/etc/redis/redis.conf:rw
