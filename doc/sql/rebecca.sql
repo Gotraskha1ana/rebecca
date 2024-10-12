@@ -1,7 +1,7 @@
 drop database if exists rebecca;
 create database rebecca;
-use rebecca;
 
+USE rebecca;
 drop table IF EXISTS Message_Template;
 
 CREATE TABLE `Message_Template`

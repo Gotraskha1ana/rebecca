@@ -1,7 +1,8 @@
-drop database if exists nacos_config;
-create database nacos_config;
-use nacos_config;
+drop database if exists nacos;
+create database nacos;
 
+USE nacos;
+Drop Table IF EXISTS `config_info`;
 CREATE TABLE `config_info`
 (
     `id`                 bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'id',
@@ -25,6 +26,7 @@ CREATE TABLE `config_info`
     UNIQUE KEY `uk_configinfo_datagrouptenant` (`data_id`,`group_id`,`tenant_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='config_info';
 
+Drop Table IF EXISTS `config_info_aggr`;
 CREATE TABLE `config_info_aggr`
 (
     `id`           bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'id',
@@ -40,7 +42,7 @@ CREATE TABLE `config_info_aggr`
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='增加租户字段';
 
 
-
+Drop Table IF EXISTS `config_info_beta`;
 CREATE TABLE `config_info_beta`
 (
     `id`           bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'id',
@@ -60,6 +62,7 @@ CREATE TABLE `config_info_beta`
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='config_info_beta';
 
 
+Drop Table IF EXISTS `config_info_tag`;
 CREATE TABLE `config_info_tag`
 (
     `id`           bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'id',
@@ -79,6 +82,7 @@ CREATE TABLE `config_info_tag`
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='config_info_tag';
 
 
+Drop Table IF EXISTS `config_tags_relation`;
 CREATE TABLE `config_tags_relation`
 (
     `id`        bigint(20) NOT NULL COMMENT 'id',
@@ -93,7 +97,7 @@ CREATE TABLE `config_tags_relation`
     KEY         `idx_tenant_id` (`tenant_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='config_tag_relation';
 
-
+Drop Table IF EXISTS `group_capacity`;
 CREATE TABLE `group_capacity`
 (
     `id`                bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键ID',
@@ -111,6 +115,7 @@ CREATE TABLE `group_capacity`
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='集群、各Group容量信息表';
 
 
+Drop Table IF EXISTS `his_config_info`;
 CREATE TABLE `his_config_info`
 (
     `id`                 bigint(64) unsigned NOT NULL,
@@ -133,7 +138,7 @@ CREATE TABLE `his_config_info`
     KEY                  `idx_did` (`data_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='多租户改造';
 
-
+Drop Table IF EXISTS `tenant_capacity`;
 CREATE TABLE `tenant_capacity`
 (
     `id`                bigint(20) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键ID',
@@ -150,7 +155,7 @@ CREATE TABLE `tenant_capacity`
     UNIQUE KEY `uk_tenant_id` (`tenant_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='租户容量信息表';
 
-
+Drop Table IF EXISTS `tenant_info`;
 CREATE TABLE `tenant_info`
 (
     `id`            bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'id',
@@ -166,6 +171,7 @@ CREATE TABLE `tenant_info`
     KEY             `idx_tenant_id` (`tenant_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='tenant_info';
 
+Drop Table IF EXISTS `users`;
 CREATE TABLE `users`
 (
     `username` varchar(50)  NOT NULL PRIMARY KEY,
@@ -173,6 +179,7 @@ CREATE TABLE `users`
     `enabled`  boolean      NOT NULL
 );
 
+Drop Table IF EXISTS `roles`;
 CREATE TABLE `roles`
 (
     `username` varchar(50) NOT NULL,
@@ -180,6 +187,7 @@ CREATE TABLE `roles`
     UNIQUE INDEX `idx_user_role` (`username` ASC, `role` ASC) USING BTREE
 );
 
+Drop Table IF EXISTS `permissions`;
 CREATE TABLE `permissions`
 (
     `role`     varchar(50)  NOT NULL,

@@ -1,3 +1,7 @@
+drop database if exists user;
+create database user;
+
+USE user;
 -- 创建用户表
 DROP TABLE IF EXISTS User;
 CREATE TABLE `User` (

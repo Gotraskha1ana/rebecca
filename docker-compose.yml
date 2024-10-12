@@ -1,0 +1,44 @@
+services:
+      rebecca-mysql:
+            image: mysql:8.0
+            container_name: rebecca-mysql
+            restart: always
+            ports:
+                  - "3306:3306"
+            volumes:
+                  - mysql-data:/var/lib/mysql
+                  - ./doc/sql:/docker-entrypoint-initdb.d
+                  - ./doc/docker/mysql/mysql.cnf:/etc/mysql/my.cnf
+            environment: #jdbc:mysql://localhost:3306/?allowPublicKeyRetrieval=true&useSSL=false
+                  MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+                  TZ: ${TZ}
+            command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+            healthcheck:
+                  test: [ "CMD", "mysqladmin", "ping", "-h", "localhost" ]
+                  interval: 10s
+                  timeout: 5s
+                  retries: 3
+                  start_period: 30s
+            networks:
+                  - app
+
+      rebecca-redis:
+            image: redis:3.2
+            platform: linux/amd64
+            ports:
+                  - "6379:6379"
+            restart: always
+            container_name: rebecca-redis
+            volumes:
+                  - ./doc/docker/redis/redis.conf:/usr/local/etc/redis/redis.conf:rw
+                  - redis-data:/data  # 用于持久化 Redis 数据
+            command: /bin/bash -c "redis-server /usr/local/etc/redis/redis.conf --requirepass $REDIS_PASSWORD"
+            networks:
+                  - app
+
+networks:
+      app:
+
+volumes:
+      mysql-data:
+      redis-data:
