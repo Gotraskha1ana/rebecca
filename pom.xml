@@ -50,9 +50,11 @@
         <!--依赖库版本-->
         <knife4j.version>2.0.9</knife4j.version>
         <lombok.version>1.18.4</lombok.version>
-        <mysql-connector-java.version>5.1.35</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.33</mysql-connector-java.version>
         <hutool-all.version>5.8.25</hutool-all.version>
         <mybatis-plus.version>3.5.7</mybatis-plus.version>
+        <dotenv.version>5.2.2</dotenv.version>
+
         <guava.version>31.0.1-jre</guava.version>
         <okhttp.version>4.9.2</okhttp.version>
         <fastjson.version>1.2.83</fastjson.version>
@@ -121,7 +123,11 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql-connector-java.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>io.github.cdimascio</groupId>
+                <artifactId>java-dotenv</artifactId>
+                <version>${dotenv.version}</version>
+            </dependency>
             <!--hutool工具包-->
             <dependency>
                 <groupId>cn.hutool</groupId>

@@ -1,6 +1,7 @@
 package com.ricardo.rebecca.web;
 
 import com.ricardo.rebecca.common.constant.RebeccaConstant;
+import io.github.cdimascio.dotenv.Dotenv;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;

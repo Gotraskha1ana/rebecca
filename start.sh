@@ -51,9 +51,9 @@ if [ ! -f "$ENV_FILE" ]; then
 fi
 
 # 加载环境变量
-#set -o allexport
-#source "$ENV_FILE"
-#set +o allexport
+set -o allexport
+source "$ENV_FILE"
+set +o allexport
 
 # 启动Docker Compose
-#docker-compose up
+docker-compose up
