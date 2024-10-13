@@ -6,7 +6,7 @@ spring:
 
   datasource:
     # 数据库配置
-    url: jdbc:mysql://${rebecca.database.ip:localhost}:${rebecca.database.port:3306}/rebecca?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://${rebecca.database.ip:localhost}:${rebecca.database.port:3306}/rebecca?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true
     username: ${rebecca.database.username:root}
     password: ${rebecca.database.password:Ricardoc297.}
     driver-class-name: com.mysql.cj.jdbc.Driver

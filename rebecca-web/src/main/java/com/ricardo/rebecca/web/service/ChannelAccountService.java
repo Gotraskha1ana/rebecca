@@ -1,6 +1,7 @@
 package com.ricardo.rebecca.web.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ricardo.rebecca.web.dto.SaveAccountDTO;
 import com.ricardo.rebecca.web.entity.ChannelAccount;
 
 /**
@@ -10,4 +11,5 @@ import com.ricardo.rebecca.web.entity.ChannelAccount;
  * @Date 2024/10/13 13:30
  */
 public interface ChannelAccountService extends IService<ChannelAccount> {
+    Boolean saveOrUpdateAccount(SaveAccountDTO dto);
 }

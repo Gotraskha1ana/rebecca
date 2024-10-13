@@ -10,6 +10,9 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/demomodule/pom.xml" />
+        <option value="$PROJECT_DIR$/rebecca-domain-api/pom.xml" />
+        <option value="$PROJECT_DIR$/rebecca-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/rebecca-support/pom.xml" />
       </set>
     </option>
   </component>

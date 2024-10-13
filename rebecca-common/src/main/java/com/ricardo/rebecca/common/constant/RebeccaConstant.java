@@ -34,6 +34,7 @@ public class RebeccaConstant {
      * 如果新建模板/账号时，没传入则用该常量
      */
     public static final String DEFAULT_CREATOR = "Ricardo";
+    public static final Long DEFAULT_USER_ID = 1L;
     public static final String DEFAULT_UPDATER = "Ricardo";
     public static final String DEFAULT_TEAM = "Ricardo";
     public static final String DEFAULT_AUDITOR = "Ricardo";

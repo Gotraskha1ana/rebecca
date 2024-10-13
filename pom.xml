@@ -13,20 +13,8 @@
     <url>https://gitee.com/ricardo_c/rebecca.git</url>
 
     <modules>
-<!--        <module>rebecca-common</module>-->
-<!--        <module>rebecca-support</module>-->
-<!--        <module>rebecca-stream</module>-->
-<!--        <module>rebecca-handler</module>-->
-<!--        <module>rebecca-web</module>-->
-<!--        <module>rebecca-service-api</module>-->
-<!--        <module>rebecca-service-impl</module>-->
-<!--        <module>rebecca-cron</module>-->
-<!--        <module>rebecca-generator</module>-->
         <module>rebecca-common</module>
         <module>rebecca-web</module>
-        <module>rebecca-domain</module>
-        <module>rebecca-domain-api</module>
-        <module>rebecca-support</module>
     </modules>
 
     <parent>
@@ -92,31 +80,6 @@
                 <artifactId>rebecca-common</artifactId>
                 <version>${revision}</version>
             </dependency>
-<!--            <dependency>-->
-<!--                <groupId>com.ricardo.rebecca</groupId>-->
-<!--                <artifactId>rebecca-support</artifactId>-->
-<!--                <version>${revision}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>com.ricardo.rebecca</groupId>-->
-<!--                <artifactId>rebecca-service-api</artifactId>-->
-<!--                <version>${revision}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>com.ricardo.rebecca</groupId>-->
-<!--                <artifactId>rebecca-handler</artifactId>-->
-<!--                <version>${revision}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>com.ricardo.rebecca</groupId>-->
-<!--                <artifactId>rebecca-cron</artifactId>-->
-<!--                <version>${revision}</version>-->
-<!--            </dependency>-->
-<!--            <dependency>-->
-<!--                <groupId>com.ricardo.rebecca</groupId>-->
-<!--                <artifactId>rebecca-service-impl</artifactId>-->
-<!--                <version>${revision}</version>-->
-<!--            </dependency>-->
             <!--mysql驱动包-->
             <dependency>
                 <groupId>mysql</groupId>
