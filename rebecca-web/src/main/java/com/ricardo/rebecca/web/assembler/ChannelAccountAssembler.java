@@ -24,6 +24,7 @@ public class ChannelAccountAssembler {
         account.setUpdated(nowTime);
 
 
+
         if (isNewAccount){
             account.setCreated(nowTime);
             account.setUserId(RebeccaConstant.DEFAULT_USER_ID);
