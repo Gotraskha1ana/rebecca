@@ -37,7 +37,7 @@ services:
                   - app
 
       rebecca-nacos:
-            image: nacos/nacos-server:v2.1.0
+            image: nacos/nacos-server:v2.3.0
             platform: linux/amd64
             container_name: rebecca-nacos
             environment:
