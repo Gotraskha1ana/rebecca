@@ -1,6 +1,7 @@
 DROP DATABASE IF EXISTS rebecca;
-CREATE DATABASE rebecca DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
+CREATE DATABASE rebecca
+    DEFAULT CHARSET=utf8mb4
+    COLLATE=utf8mb4_unicode_ci;
 USE rebecca;
 
 DROP TABLE IF EXISTS Message_Template;

@@ -1,0 +1,31 @@
+package ${package.Entity}.feign;
+
+import ${package.Entity}.${entity};
+import ${superServiceClassPackage};
+import com.medsystem.common.constant.BusinessServiceNameConstants;
+import com.medsystem.common.constant.BusinessServiceUrlConstants;
+import com.medsystem.common.core.domain.R;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
+import java.util.List;
+
+/**
+ * <p>
+ * $!{table.comment}
+ * </p>
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+@FeignClient(value = ${feignValue} + "${userName}", contextId = "${table.serviceName}Feign")
+public interface ${table.serviceName}Feign extends BusinessServiceUrlConstants {
+
+    String QUERY_${schemaName}${table.name}_URL = TEMPLATE_URL + "/schematemplate";
+    String CREATE_${schemaName}${table.name}_URL = TEMPLATE_URL + "/schematemplate";
+    String MODIFLY_${schemaName}${table.name}_URL = TEMPLATE_URL + "/schematemplate/{id}";
+    String REMOVE_${schemaName}${table.name}_URL = TEMPLATE_URL + "/schematemplate/{id}";
+
+}
