@@ -23,8 +23,6 @@ public class ChannelAccountAssembler {
         account.setSendChannel(dto.getSendChannel());
         account.setUpdated(nowTime);
 
-
-
         if (isNewAccount){
             account.setCreated(nowTime);
             account.setUserId(RebeccaConstant.DEFAULT_USER_ID);
