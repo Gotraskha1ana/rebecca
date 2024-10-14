@@ -1,5 +1,5 @@
 drop database if exists nacos;
-create database nacos;
+create database nacos DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;;
 
 USE nacos;
 Drop Table IF EXISTS `config_info`;
@@ -26,27 +26,23 @@ CREATE TABLE `config_info`
     UNIQUE KEY `uk_configinfo_datagrouptenant` (`data_id`,`group_id`,`tenant_id`)
 ) ENGINE=InnoDB
     AUTO_INCREMENT = 1
-  DEFAULT CHARSET = utf8mb4
-  COLLATE = utf8mb4_unicode_ci
     COMMENT='config_info';
 
 Drop Table IF EXISTS `config_info_aggr`;
 CREATE TABLE `config_info_aggr`
 (
     `id`           bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'id',
-    `data_id`      varchar(255) NOT NULL COMMENT 'data_id',
-    `group_id`     varchar(255) NOT NULL COMMENT 'group_id',
-    `datum_id`     varchar(255) NOT NULL COMMENT 'datum_id',
+    `data_id`      varchar(20) NOT NULL COMMENT 'data_id',
+    `group_id`     varchar(20) NOT NULL COMMENT 'group_id',
+    `datum_id`     varchar(20) NOT NULL COMMENT 'datum_id',
     `content`      longtext     NOT NULL COMMENT '内容',
     `gmt_modified` datetime     NOT NULL COMMENT '修改时间',
     `app_name`     varchar(128) DEFAULT NULL,
-    `tenant_id`    varchar(128) DEFAULT '' COMMENT '租户字段',
+    `tenant_id`    varchar(20) DEFAULT '' COMMENT '租户字段',
     PRIMARY KEY (`id`),
     UNIQUE KEY `uk_configinfoaggr_datagrouptenantdatum` (`data_id`,`group_id`,`tenant_id`,`datum_id`)
 ) ENGINE=InnoDB
   AUTO_INCREMENT = 1
-  DEFAULT CHARSET = utf8mb4
-  COLLATE = utf8mb4_unicode_ci
     COMMENT='增加租户字段';
 
 
@@ -69,8 +65,6 @@ CREATE TABLE `config_info_beta`
     UNIQUE KEY `uk_configinfobeta_datagrouptenant` (`data_id`,`group_id`,`tenant_id`)
 ) ENGINE=InnoDB
   AUTO_INCREMENT = 1
-  DEFAULT CHARSET = utf8mb4
-  COLLATE = utf8mb4_unicode_ci
     COMMENT='config_info_beta';
 
 
@@ -93,8 +87,6 @@ CREATE TABLE `config_info_tag`
     UNIQUE KEY `uk_configinfotag_datagrouptenanttag` (`data_id`,`group_id`,`tenant_id`,`tag_id`)
 ) ENGINE=InnoDB
   AUTO_INCREMENT = 1
-  DEFAULT CHARSET = utf8mb4
-  COLLATE = utf8mb4_unicode_ci
     COMMENT='config_info_tag';
 
 
@@ -113,8 +105,6 @@ CREATE TABLE `config_tags_relation`
     KEY         `idx_tenant_id` (`tenant_id`)
 ) ENGINE=InnoDB
   AUTO_INCREMENT = 1
-  DEFAULT CHARSET = utf8mb4
-  COLLATE = utf8mb4_unicode_ci
     COMMENT='config_tag_relation';
 
 Drop Table IF EXISTS `group_capacity`;
@@ -134,8 +124,6 @@ CREATE TABLE `group_capacity`
     UNIQUE KEY `uk_group_id` (`group_id`)
 ) ENGINE=InnoDB
   AUTO_INCREMENT = 1
-  DEFAULT CHARSET = utf8mb4
-  COLLATE = utf8mb4_unicode_ci
     COMMENT='集群、各Group容量信息表';
 
 
@@ -162,8 +150,6 @@ CREATE TABLE `his_config_info`
     KEY                  `idx_did` (`data_id`)
 ) ENGINE=InnoDB
   AUTO_INCREMENT = 1
-  DEFAULT CHARSET = utf8mb4
-  COLLATE = utf8mb4_unicode_ci
     COMMENT='多租户改造';
 
 Drop Table IF EXISTS `tenant_capacity`;
@@ -183,8 +169,6 @@ CREATE TABLE `tenant_capacity`
     UNIQUE KEY `uk_tenant_id` (`tenant_id`)
 ) ENGINE=InnoDB
   AUTO_INCREMENT = 1
-  DEFAULT CHARSET = utf8mb4
-  COLLATE = utf8mb4_unicode_ci
     COMMENT='租户容量信息表';
 
 Drop Table IF EXISTS `tenant_info`;
@@ -203,8 +187,6 @@ CREATE TABLE `tenant_info`
     KEY             `idx_tenant_id` (`tenant_id`)
 ) ENGINE=InnoDB
   AUTO_INCREMENT = 1
-  DEFAULT CHARSET = utf8mb4
-  COLLATE = utf8mb4_unicode_ci
     COMMENT='tenant_info';
 
 Drop Table IF EXISTS `users`;
