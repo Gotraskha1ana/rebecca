@@ -1,5 +1,10 @@
 package com.ricardo.rebecca.message.controller;
 
+import com.alibaba.nacos.api.annotation.NacosInjected;
+import com.alibaba.nacos.api.config.annotation.NacosValue;
+import com.alibaba.nacos.api.exception.NacosException;
+import com.alibaba.nacos.api.naming.NamingService;
+import com.alibaba.nacos.api.naming.pojo.Instance;
 import com.ricardo.rebecca.api.dto.SaveAccountDTO;
 import com.ricardo.rebecca.api.service.ChannelAccountService;
 import com.ricardo.rebecca.api.service.UserService;
@@ -14,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 /**
  * @Class ChannelAccountController
@@ -31,17 +37,37 @@ public class ChannelAccountController {
     @Resource
     ChannelAccountService service;
 
-//    @Value("${username}")
-    String username;
+
+    @NacosInjected
+    private NamingService namingService;
+
+    @GetMapping( "/get")
+    @ResponseBody
+    public List<Instance> get(@RequestParam String serviceName) throws NacosException {
+        return namingService.getAllInstances(serviceName);
+    }
+
+
     @ApiOperation("测试接口")
     @GetMapping("/test/{id:.+}")
     public String test(@PathVariable("id")@NotNull Long id) {
         return service.test(id);
     }
-    @GetMapping("/test")
-    public String test() {
+
+    @Value("${username}")
+    private String username;
+    @GetMapping("/test1/1")
+    public String testUsername() {
         return username;
     }
+
+    @NacosValue(value = "${useLocalCache}", autoRefreshed = true)
+    private boolean useLocalCache;
+    @GetMapping("/test1/2")
+    public Boolean testUseLocalCache() {
+        return useLocalCache;
+    }
+
     @ApiOperation("新建、更新渠道账号信息")
     @PostMapping("/save")
     public Boolean saveOrUpdateAccount(@RequestBody @Valid SaveAccountDTO dto) {

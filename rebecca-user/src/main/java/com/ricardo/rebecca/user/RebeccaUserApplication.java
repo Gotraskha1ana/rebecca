@@ -1,5 +1,6 @@
 package com.ricardo.rebecca.user;
 
+import com.alibaba.nacos.spring.context.annotation.discovery.EnableNacosDiscovery;
 import com.ricardo.rebecca.common.constant.RebeccaConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;

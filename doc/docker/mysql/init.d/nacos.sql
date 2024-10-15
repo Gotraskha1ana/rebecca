@@ -1,9 +1,8 @@
 drop database if exists nacos;
-CREATE DATABASE rebecca
+CREATE DATABASE nacos
 DEFAULT CHARSET=utf8mb4
 COLLATE=utf8mb4_unicode_ci;
 USE nacos;
-Drop Table IF EXISTS `config_info`;
 CREATE TABLE `config_info`
 (
     `id`                 bigint(20) NOT NULL AUTO_INCREMENT COMMENT 'id',

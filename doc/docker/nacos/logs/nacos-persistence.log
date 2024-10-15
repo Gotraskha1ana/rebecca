@@ -30,3 +30,19 @@
 
 2024-10-15 13:44:02,742 INFO use StandaloneDatabaseOperateImpl
 
+2024-10-15 19:56:38,546 INFO use local db service for init
+
+2024-10-15 19:56:40,281 WARN Lexical error at line 4, column 66.  Encountered: <EOF> after : "".
+
+2024-10-15 19:56:40,284 WARN Syntax error: Encountered "*" at line 1, column 1.
+
+2024-10-15 19:56:41,418 WARN Lexical error at line 4, column 13.  Encountered: "`" (96), after : "".
+
+2024-10-15 19:56:41,420 WARN Lexical error at line 1, column 13.  Encountered: "`" (96), after : "".
+
+2024-10-15 19:56:41,420 WARN Lexical error at line 1, column 13.  Encountered: "`" (96), after : "".
+
+2024-10-15 19:56:41,421 WARN Lexical error at line 1, column 13.  Encountered: "`" (96), after : "".
+
+2024-10-15 19:56:41,421 INFO use StandaloneDatabaseOperateImpl
+

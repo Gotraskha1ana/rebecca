@@ -1,5 +1,7 @@
 package com.ricardo.rebecca.message;
 
+import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
+import com.alibaba.nacos.spring.context.annotation.discovery.EnableNacosDiscovery;
 import com.ricardo.rebecca.common.constant.RebeccaConstant;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
@@ -19,6 +21,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @Slf4j
 @EnableDubbo
+@NacosPropertySource(dataId = "example", autoRefreshed = true)
 @SpringBootApplication
 public class RebeccaMessageApplication implements CommandLineRunner {
     @Value("${server.port}")

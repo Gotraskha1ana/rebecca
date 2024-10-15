@@ -18,4 +18,6 @@ public interface ChannelAccountService extends IService<ChannelAccount> {
     Boolean saveOrUpdate(@Valid SaveAccountDTO dto);
 
     String test(@NotNull Long id);
+
+    String testMyService(@NotNull Long id);
 }

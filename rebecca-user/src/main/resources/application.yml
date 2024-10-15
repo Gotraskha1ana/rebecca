@@ -1,47 +1,67 @@
-nacos:
-  config:
-    server-addr: localhost:8848
-    data-id: test
-    group: DEFAULT_GROUP
-    auto-refresh: true
-    bootstrap:
-      enable: true
-
-spring:
-  profiles:
-    active: dev # 激活的环境
-  application:
-    name: rebecca-user # 应用名称
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
-
-  datasource:
-    # 数据库配置
-    url: jdbc:mysql://${rebecca.database.ip:localhost}:${rebecca.database.port:3306}/rebecca?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true
-    username: ${rebecca.database.username:root}
-    password: ${rebecca.database.password:Ricardoc297.}
-    driver-class-name: com.mysql.cj.jdbc.Driver
-#    hikari:
-#      minimum-idle: 10 # HikariCP连接池最小空闲连接数
-#      maximum-pool-size: 30 # HikariCP连接池最大连接数
-#      auto-commit: true # 是否自动提交
-#      idle-timeout: 30000 # 空闲连接的超时时间
-#      pool-name: HikariCP # 连接池名称
-#      max-lifetime: 900000 # 连接的最大生存时间
-#      connection-timeout: 10000 # 连接超时时间
-#      connection-test-query: SELECT 1 # 测试连接的SQL查询
-#      validation-timeout: 1000 # 连接验证超时
-  redis:
-    # Redis配置
-    host: ${rebecca.redis.ip:localhost}
-    port: ${rebecca.redis.port:${REDIS_PASSWORD}}
-    password: ${rebecca.redis.password:${REDIS_PASSWORD}} #todo 改密码
-
+#region DUBBO
 dubbo:
-  protocol:
-    name: dubbo
-    port: -1
-  registry:
-    address: nacos://localhost:8848
+      application:
+            name: rebecca-user-dubbo
+            logger: logback
+      protocol:
+            name: dubbo
+            port: -1
+            serialization: fastjson2
+      registry:
+            address: nacos://localhost:8848
+            group: dubbo
+            parameters:
+                  username: nacos
+                  password: nacos
+#                  register-consumer-url: true #是否注册消费者（默认为false）
+#                  namespace: 5cbb70a5-xxx-xxx-xxx-d43479ae0932
+                  preserved:
+                        heart:
+                              beat:
+                                    timeout: 15000 #该实例在不发送心跳后，从健康到不健康的时间 默认值
+                                    interval: 5000 #该实例在客户端上报心跳的间隔时间 默认值
+            register-mode: instance # 注册模式 仅应用/仅接口/我全都要
+#endregion
+
+#region nacos
+nacos:
+      config:
+            server-addr: 127.0.0.1:8848
+#      discovery:
+#            server-addr: 127.0.0.1:8848
+#endregion
+
+#region Spring
+spring:
+      profiles:
+            active: dev # 激活的环境
+      application:
+            name: rebecca-user-spring # 应用名称
+      #region Datasource
+      datasource:
+            # 数据库配置
+            url: jdbc:mysql://${rebecca.database.ip:localhost}:${rebecca.database.port:3306}/rebecca?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&allowPublicKeyRetrieval=true
+            username: ${rebecca.database.username:root}
+            password: ${rebecca.database.password:Ricardoc297.}
+            driver-class-name: com.mysql.cj.jdbc.Driver
+      #    hikari:
+      #      minimum-idle: 10 # HikariCP连接池最小空闲连接数
+      #      maximum-pool-size: 30 # HikariCP连接池最大连接数
+      #      auto-commit: true # 是否自动提交
+      #      idle-timeout: 30000 # 空闲连接的超时时间
+      #      pool-name: HikariCP # 连接池名称
+      #      max-lifetime: 900000 # 连接的最大生存时间
+      #      connection-timeout: 10000 # 连接超时时间
+      #      connection-test-query: SELECT 1 # 测试连接的SQL查询
+      #      validation-timeout: 1000 # 连接验证超时
+      #endregion
+
+      #region Redis
+      redis:
+            # Redis配置
+            host: ${rebecca.redis.ip:localhost}
+            port: ${rebecca.redis.port:${REDIS_PASSWORD}}
+            password: ${rebecca.redis.password:${REDIS_PASSWORD}} #todo 改密码
+      #endregion
+
+#endregion

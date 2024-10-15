@@ -12,5 +12,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface UserService extends IService<User> {
     User getUserById(Long id);
 
-    String test(Long id);
+    String testUser(Long id);
+
+    String testChannelAccount(Long id);
+
+    String testLoop(Long id);
 }

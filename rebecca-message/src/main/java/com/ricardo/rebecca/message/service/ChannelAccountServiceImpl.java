@@ -19,9 +19,9 @@ import org.springframework.stereotype.Service;
  * @Date 2024/10/14 20:46
  */
 @Service
-//@DubboService
+@DubboService
 public class ChannelAccountServiceImpl extends ServiceImpl<ChannelAccountMapper, ChannelAccount> implements ChannelAccountService {
-    @DubboReference(url = "dubbo://192.168.64.1:20880/com.ricardo.rebecca.api.service.UserService?serialization=fastjson2")
+    @DubboReference
     UserService userService;
 
     @Override
@@ -46,6 +46,13 @@ public class ChannelAccountServiceImpl extends ServiceImpl<ChannelAccountMapper,
 
     @Override
     public String test(Long id) {
+        System.out.println("调用userService获取用户信息");
         return userService.getUserById(id).toString();
+    }
+
+    @Override
+    public String testMyService(Long id) {
+        System.out.println("当前位置：ChannelAccountService");
+        return "调用渠道账号服务成功! id:"+id;
     }
 }
