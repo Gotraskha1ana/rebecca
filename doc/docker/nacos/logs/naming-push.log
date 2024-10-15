@@ -1,0 +1,58 @@
+2024-10-15 13:05:24,629 INFO [PUSH-SUCC] 76ms, all delay time 685ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-message', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:11:48,051 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=1}
+
+2024-10-15 13:11:48,662 INFO [PUSH-SUCC] 65ms, all delay time 622ms, SLA 622ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=192.168.28.225
+
+2024-10-15 13:11:48,712 INFO [PUSH-SUCC] 20ms, all delay time 643ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:11:49,226 INFO [PUSH-SUCC] 14ms, all delay time 547ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-user', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:12:27,250 INFO [PUSH-SUCC] 40ms, all delay time 568ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-message', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:15:06,772 INFO [PUSH-SUCC] 57ms, all delay time 656ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-message', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:15:50,305 INFO [PUSH-SUCC] 20ms, all delay time 553ms, SLA 553ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=2}, originalSize=0, DataSize=0, target=192.168.28.225
+
+2024-10-15 13:16:09,091 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=3}
+
+2024-10-15 13:16:09,665 INFO [PUSH-SUCC] 23ms, all delay time 558ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:16:09,669 INFO [PUSH-SUCC] 16ms, all delay time 592ms, SLA 592ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=192.168.28.225
+
+2024-10-15 13:16:09,970 INFO [PUSH-SUCC] 15ms, all delay time 520ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-user', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:16:47,660 INFO [PUSH-SUCC] 14ms, all delay time 553ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-message', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:18:19,797 INFO [PUSH-SUCC] 38ms, all delay time 584ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-message', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:18:40,590 INFO [PUSH-SUCC] 63ms, all delay time 647ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-message', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:26:20,934 INFO [PUSH-SUCC] 18ms, all delay time 621ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-message', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:35:52,973 INFO [PUSH-SUCC] 40ms, all delay time 852ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-message', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:36:17,281 INFO [PUSH-SUCC] 56ms, all delay time 638ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-message', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:36:50,841 INFO [PUSH-SUCC] 12ms, all delay time 547ms, SLA 548ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=4}, originalSize=0, DataSize=0, target=192.168.28.225
+
+2024-10-15 13:37:10,204 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=5}
+
+2024-10-15 13:37:10,839 INFO [PUSH-SUCC] 31ms, all delay time 631ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:37:10,852 INFO [PUSH-SUCC] 26ms, all delay time 654ms, SLA 655ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=5}, originalSize=1, DataSize=1, target=192.168.28.225
+
+2024-10-15 13:37:11,032 INFO [PUSH-SUCC] 14ms, all delay time 555ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-user', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:42:21,701 INFO [PUSH-SUCC] 30ms, all delay time 631ms, SLA 632ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=6}, originalSize=0, DataSize=0, target=192.168.28.225
+
+2024-10-15 13:46:15,799 INFO [PUSH] Task merge for Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=1}
+
+2024-10-15 13:46:16,437 INFO [PUSH-SUCC] 144ms, all delay time 745ms, SLA 758ms, Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=192.168.28.225
+
+2024-10-15 13:46:16,500 INFO [PUSH-SUCC] 126ms, all delay time 655ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:46:17,941 INFO [PUSH-SUCC] 36ms, all delay time 603ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-user', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+
+2024-10-15 13:47:04,106 INFO [PUSH-SUCC] 21ms, all delay time 541ms for subscriber 192.168.28.225, Service{namespace='public', group='DEFAULT_GROUP', name='providers:org.apache.dubbo.metadata.MetadataService:1.0.0:rebecca-message', ephemeral=true, revision=0}, originalSize=0, DataSize=0
+

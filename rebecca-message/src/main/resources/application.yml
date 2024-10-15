@@ -1,8 +1,21 @@
+nacos:
+  config:
+    server-addr: localhost:8848
+    data-id: test
+    group: DEFAULT_GROUP
+    auto-refresh: true
+    bootstrap:
+      enable: true
+
 spring:
   profiles:
     active: dev # 激活的环境
   application:
     name: rebecca-message # 应用名称
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
 
   datasource:
     # 数据库配置
@@ -28,5 +41,8 @@ spring:
 dubbo:
   application:
     qos-enable: false
-  scan:
-    base-packages: com.ricardo.rebecca.message.service
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://localhost:8848

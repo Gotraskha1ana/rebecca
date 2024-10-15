@@ -49,7 +49,7 @@
         <dubbo.version>3.2.0</dubbo.version>
         <guava.version>31.0.1-jre</guava.version>
         <okhttp.version>4.9.2</okhttp.version>
-        <fastjson.version>1.2.83</fastjson.version>
+        <fastjson.version>2.0.23</fastjson.version>
         <tencentcloud-sdk-java.version>3.1.510</tencentcloud-sdk-java.version>
         <nacos-config-spring-boot-starter.version>0.2.12</nacos-config-spring-boot-starter.version>
         <apollo-client.version>2.1.0</apollo-client.version>
@@ -147,17 +147,11 @@
                 <artifactId>rebecca-message</artifactId>
                 <version>${revision}</version>
             </dependency>
-<!--            &lt;!&ndash;http库&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>com.squareup.okhttp3</groupId>-->
-<!--                <artifactId>okhttp</artifactId>-->
-<!--                <version>${okhttp.version}</version>-->
-<!--            </dependency>-->
 
             <!--fastjson包-->
             <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
 
@@ -170,24 +164,25 @@
 
             <!--nacos-->
             <dependency>
-                <groupId>com.alibaba.boot</groupId>
-                <artifactId>nacos-config-spring-boot-starter</artifactId>
-                <version>${nacos-config-spring-boot-starter.version}</version>
+                <groupId>com.alibaba.nacos</groupId>
+                <artifactId>nacos-client</artifactId>
+                <version>2.3.0</version>
             </dependency>
 
-<!--            &lt;!&ndash;apollo&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>com.ctrip.framework.apollo</groupId>-->
-<!--                <artifactId>apollo-client</artifactId>-->
-<!--                <version>${apollo-client.version}</version>-->
-<!--            </dependency>-->
 
-<!--            &lt;!&ndash;注解打印日志&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>cn.monitor4all</groupId>-->
-<!--                <artifactId>log-record-starter</artifactId>-->
-<!--                <version>${log-record-starter.version}</version>-->
-<!--            </dependency>-->
+            <!--            &lt;!&ndash;apollo&ndash;&gt;-->
+            <!--            <dependency>-->
+            <!--                <groupId>com.ctrip.framework.apollo</groupId>-->
+            <!--                <artifactId>apollo-client</artifactId>-->
+            <!--                <version>${apollo-client.version}</version>-->
+            <!--            </dependency>-->
+
+            <!--            &lt;!&ndash;注解打印日志&ndash;&gt;-->
+            <!--            <dependency>-->
+            <!--                <groupId>cn.monitor4all</groupId>-->
+            <!--                <artifactId>log-record-starter</artifactId>-->
+            <!--                <version>${log-record-starter.version}</version>-->
+            <!--            </dependency>-->
 
             <!--邮件发送-->
             <dependency>
@@ -196,18 +191,18 @@
                 <version>${javax.mail.version}</version>
             </dependency>
 
-<!--            <dependency>-->
-<!--                <groupId>org.assertj</groupId>-->
-<!--                <artifactId>assertj-core</artifactId>-->
-<!--                <version>3.24.2</version>-->
-<!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>org.assertj</groupId>-->
+            <!--                <artifactId>assertj-core</artifactId>-->
+            <!--                <version>3.24.2</version>-->
+            <!--            </dependency>-->
 
-<!--            &lt;!&ndash;swagger&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>io.springfox</groupId>-->
-<!--                <artifactId>springfox-boot-starter</artifactId>-->
-<!--                <version>${springfox-boot-starter.version}</version>-->
-<!--            </dependency>-->
+            <!--            &lt;!&ndash;swagger&ndash;&gt;-->
+            <!--            <dependency>-->
+            <!--                <groupId>io.springfox</groupId>-->
+            <!--                <artifactId>springfox-boot-starter</artifactId>-->
+            <!--                <version>${springfox-boot-starter.version}</version>-->
+            <!--            </dependency>-->
 
             <!--graylog-->
             <dependency>
@@ -216,58 +211,58 @@
                 <version>${logback-gelf.version}</version>
             </dependency>
 
-<!--            &lt;!&ndash;xxl-job分布式定时任务&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>com.xuxueli</groupId>-->
-<!--                <artifactId>xxl-job-core</artifactId>-->
-<!--                <version>${xxl-job-core.version}</version>-->
-<!--            </dependency>-->
+            <!--            &lt;!&ndash;xxl-job分布式定时任务&ndash;&gt;-->
+            <!--            <dependency>-->
+            <!--                <groupId>com.xuxueli</groupId>-->
+            <!--                <artifactId>xxl-job-core</artifactId>-->
+            <!--                <version>${xxl-job-core.version}</version>-->
+            <!--            </dependency>-->
 
-<!--            &lt;!&ndash;flink相关依赖&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>org.apache.flink</groupId>-->
-<!--                <artifactId>flink-walkthrough-common_${scala.binary.version}</artifactId>-->
-<!--                <version>${flink.version}</version>-->
-<!--            </dependency>-->
+            <!--            &lt;!&ndash;flink相关依赖&ndash;&gt;-->
+            <!--            <dependency>-->
+            <!--                <groupId>org.apache.flink</groupId>-->
+            <!--                <artifactId>flink-walkthrough-common_${scala.binary.version}</artifactId>-->
+            <!--                <version>${flink.version}</version>-->
+            <!--            </dependency>-->
 
-<!--            <dependency>-->
-<!--                <groupId>org.apache.flink</groupId>-->
-<!--                <artifactId>flink-streaming-java_${scala.binary.version}</artifactId>-->
-<!--                <version>${flink.version}</version>-->
-<!--                <scope>provided</scope>-->
-<!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>org.apache.flink</groupId>-->
+            <!--                <artifactId>flink-streaming-java_${scala.binary.version}</artifactId>-->
+            <!--                <version>${flink.version}</version>-->
+            <!--                <scope>provided</scope>-->
+            <!--            </dependency>-->
 
-<!--            <dependency>-->
-<!--                <groupId>org.apache.flink</groupId>-->
-<!--                <artifactId>flink-clients_${scala.binary.version}</artifactId>-->
-<!--                <version>${flink.version}</version>-->
-<!--                <scope>provided</scope>-->
-<!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>org.apache.flink</groupId>-->
+            <!--                <artifactId>flink-clients_${scala.binary.version}</artifactId>-->
+            <!--                <version>${flink.version}</version>-->
+            <!--                <scope>provided</scope>-->
+            <!--            </dependency>-->
 
-<!--            <dependency>-->
-<!--                <groupId>org.apache.flink</groupId>-->
-<!--                <artifactId>flink-connector-kafka_${scala.binary.version}</artifactId>-->
-<!--                <version>${flink.version}</version>-->
-<!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>org.apache.flink</groupId>-->
+            <!--                <artifactId>flink-connector-kafka_${scala.binary.version}</artifactId>-->
+            <!--                <version>${flink.version}</version>-->
+            <!--            </dependency>-->
 
-<!--            <dependency>-->
-<!--                <groupId>org.apache.flink</groupId>-->
-<!--                <artifactId>flink-connector-hive_2.12</artifactId>-->
-<!--                <version>${flink-connector-hive_2.12.version}</version>-->
-<!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>org.apache.flink</groupId>-->
+            <!--                <artifactId>flink-connector-hive_2.12</artifactId>-->
+            <!--                <version>${flink-connector-hive_2.12.version}</version>-->
+            <!--            </dependency>-->
 
-<!--            <dependency>-->
-<!--                <groupId>org.apache.flink</groupId>-->
-<!--                <artifactId>flink-table-api-java-bridge</artifactId>-->
-<!--                <version>${flink-table-api-java-bridge.version}</version>-->
-<!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>org.apache.flink</groupId>-->
+            <!--                <artifactId>flink-table-api-java-bridge</artifactId>-->
+            <!--                <version>${flink-table-api-java-bridge.version}</version>-->
+            <!--            </dependency>-->
 
-<!--            &lt;!&ndash;Hive exec&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>org.apache.hive</groupId>-->
-<!--                <artifactId>hive-exec</artifactId>-->
-<!--                <version>${hive-exec.version}</version>-->
-<!--            </dependency>-->
+            <!--            &lt;!&ndash;Hive exec&ndash;&gt;-->
+            <!--            <dependency>-->
+            <!--                <groupId>org.apache.hive</groupId>-->
+            <!--                <artifactId>hive-exec</artifactId>-->
+            <!--                <version>${hive-exec.version}</version>-->
+            <!--            </dependency>-->
 
             <!--微信服务号第三方SDK-->
             <dependency>
@@ -290,12 +285,12 @@
                 <version>${weixin-java}</version>
             </dependency>
 
-<!--            &lt;!&ndash;动态线程池引入&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>io.github.lyh200</groupId>-->
-<!--                <artifactId>dynamic-tp-spring-boot-starter-apollo</artifactId>-->
-<!--                <version>${dynamic-tp-spring-boot-starter-apollo.version}</version>-->
-<!--            </dependency>-->
+            <!--            &lt;!&ndash;动态线程池引入&ndash;&gt;-->
+            <!--            <dependency>-->
+            <!--                <groupId>io.github.lyh200</groupId>-->
+            <!--                <artifactId>dynamic-tp-spring-boot-starter-apollo</artifactId>-->
+            <!--                <version>${dynamic-tp-spring-boot-starter-apollo.version}</version>-->
+            <!--            </dependency>-->
 
             <!--支付宝sdk-->
             <dependency>
@@ -311,26 +306,26 @@
                 <version>${alibaba-dingtalk-service-sdk.version}</version>
             </dependency>
 
-<!--            &lt;!&ndash;rocketmq&ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>org.apache.rocketmq</groupId>-->
-<!--                <artifactId>rocketmq-spring-boot-starter</artifactId>-->
-<!--                <version>${rocketmq-spring-boot-starter.version}</version>-->
-<!--            </dependency>-->
+            <!--            &lt;!&ndash;rocketmq&ndash;&gt;-->
+            <!--            <dependency>-->
+            <!--                <groupId>org.apache.rocketmq</groupId>-->
+            <!--                <artifactId>rocketmq-spring-boot-starter</artifactId>-->
+            <!--                <version>${rocketmq-spring-boot-starter.version}</version>-->
+            <!--            </dependency>-->
 
-<!--            &lt;!&ndash;hades规则引擎：https://github.com/ZhongFuCheng3y/hades &ndash;&gt;-->
-<!--            <dependency>-->
-<!--                <groupId>io.github.ZhongFuCheng3y</groupId>-->
-<!--                <artifactId>hades-nacos-starter</artifactId>-->
-<!--                <version>${hades-nacos-starter.version}</version>-->
-<!--            </dependency>-->
+            <!--            &lt;!&ndash;hades规则引擎：https://github.com/ZhongFuCheng3y/hades &ndash;&gt;-->
+            <!--            <dependency>-->
+            <!--                <groupId>io.github.ZhongFuCheng3y</groupId>-->
+            <!--                <artifactId>hades-nacos-starter</artifactId>-->
+            <!--                <version>${hades-nacos-starter.version}</version>-->
+            <!--            </dependency>-->
 
             <!--Configuration Processor-->
-<!--            <dependency>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-configuration-processor</artifactId>-->
-<!--                <version>${spring-boot-configuration-processor.version}</version>-->
-<!--            </dependency>-->
+            <!--            <dependency>-->
+            <!--                <groupId>org.springframework.boot</groupId>-->
+            <!--                <artifactId>spring-boot-configuration-processor</artifactId>-->
+            <!--                <version>${spring-boot-configuration-processor.version}</version>-->
+            <!--            </dependency>-->
 
         </dependencies>
     </dependencyManagement>

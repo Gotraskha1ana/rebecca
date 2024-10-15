@@ -1,0 +1,1374 @@
+2024-10-14 13:35:56,039 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2024-10-14 13:35:56,340 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2024-10-14 13:35:56,591 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2024-10-14 13:35:56,592 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2024-10-14 13:35:56,592 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2024-10-14 13:35:56,597 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2024-10-14 13:35:56,605 INFO The number of active nodes increment to 1.
+
+2024-10-14 13:35:56,975 INFO Starts FSMCaller successfully.
+
+2024-10-14 13:35:56,984 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot.
+
+2024-10-14 13:35:57,009 INFO Node <naming_persistent_service_v2/c9c0dbb40478:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=c9c0dbb40478:7848, oldConf=.
+
+2024-10-14 13:35:57,015 INFO Node <naming_persistent_service_v2/c9c0dbb40478:7848> start vote and grant vote self, term=0.
+
+2024-10-14 13:35:57,050 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=c9c0dbb40478:7848, cost time=26 ms
+
+2024-10-14 13:35:57,052 INFO Node <naming_persistent_service_v2/c9c0dbb40478:7848> become leader of group, term=1, conf=c9c0dbb40478:7848, oldConf=.
+
+2024-10-14 13:35:57,055 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2024-10-14 13:35:57,061 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 13:35:57,061 INFO Start the RaftGroupService successfully.
+
+2024-10-14 13:35:57,094 INFO onLeaderStart: term=1.
+
+2024-10-14 13:35:57,177 INFO The number of active nodes increment to 2.
+
+2024-10-14 13:35:57,384 INFO Starts FSMCaller successfully.
+
+2024-10-14 13:35:57,388 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot.
+
+2024-10-14 13:35:57,392 INFO Node <naming_instance_metadata/c9c0dbb40478:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=c9c0dbb40478:7848, oldConf=.
+
+2024-10-14 13:35:57,393 INFO Node <naming_instance_metadata/c9c0dbb40478:7848> start vote and grant vote self, term=0.
+
+2024-10-14 13:35:57,397 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=c9c0dbb40478:7848, cost time=3 ms
+
+2024-10-14 13:35:57,398 INFO Node <naming_instance_metadata/c9c0dbb40478:7848> become leader of group, term=1, conf=c9c0dbb40478:7848, oldConf=.
+
+2024-10-14 13:35:57,398 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 13:35:57,398 INFO Start the RaftGroupService successfully.
+
+2024-10-14 13:35:57,406 INFO onLeaderStart: term=1.
+
+2024-10-14 13:35:57,452 WARN Channel in TRANSIENT_FAILURE state: c9c0dbb40478:7848.
+
+2024-10-14 13:35:57,456 WARN Channel in SHUTDOWN state: c9c0dbb40478:7848.
+
+2024-10-14 13:35:57,492 INFO The number of active nodes increment to 3.
+
+2024-10-14 13:35:57,522 INFO Starts FSMCaller successfully.
+
+2024-10-14 13:35:57,522 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_service_metadata/snapshot.
+
+2024-10-14 13:35:57,523 INFO Node <naming_service_metadata/c9c0dbb40478:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=c9c0dbb40478:7848, oldConf=.
+
+2024-10-14 13:35:57,524 INFO Node <naming_service_metadata/c9c0dbb40478:7848> start vote and grant vote self, term=0.
+
+2024-10-14 13:35:57,526 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=c9c0dbb40478:7848, cost time=1 ms
+
+2024-10-14 13:35:57,526 INFO Node <naming_service_metadata/c9c0dbb40478:7848> become leader of group, term=1, conf=c9c0dbb40478:7848, oldConf=.
+
+2024-10-14 13:35:57,527 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 13:35:57,527 INFO Start the RaftGroupService successfully.
+
+2024-10-14 13:35:57,529 INFO onLeaderStart: term=1.
+
+2024-10-14 13:35:58,547 ERROR Fail to connect c9c0dbb40478:7848, remoting exception: java.util.concurrent.TimeoutException.
+
+2024-10-14 13:35:58,549 ERROR Fail to connect c9c0dbb40478:7848, remoting exception: java.util.concurrent.TimeoutException.
+
+2024-10-14 13:35:58,584 ERROR Fail to connect peer c9c0dbb40478:7848 to get leader for group naming_persistent_service_v2.
+
+2024-10-14 13:35:58,585 ERROR Fail to connect peer c9c0dbb40478:7848 to get leader for group naming_instance_metadata.
+
+2024-10-14 13:37:31,614 INFO Node <naming_service_metadata/c9c0dbb40478:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 13:37:31,636 INFO Fail to find the next candidate.
+
+2024-10-14 13:37:31,635 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 13:37:31,700 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=c9c0dbb40478:7848, cost time=47 ms
+
+2024-10-14 13:37:31,705 INFO Shutting down FSMCaller...
+
+2024-10-14 13:37:31,708 INFO onShutdown.
+
+2024-10-14 13:37:31,711 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@3ceedab[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:37:31,713 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@371cde7b[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:37:31,714 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_service_metadata/c9c0dbb40478:7848>'}.
+
+2024-10-14 13:37:31,715 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_service_metadata/c9c0dbb40478:7848>'}.
+
+2024-10-14 13:37:31,715 INFO The number of active nodes decrement to 2.
+
+2024-10-14 13:37:31,715 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_service_metadata/c9c0dbb40478:7848>'}.
+
+2024-10-14 13:37:31,715 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_service_metadata/c9c0dbb40478:7848>'}.
+
+2024-10-14 13:37:31,716 INFO Node <naming_service_metadata/c9c0dbb40478:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 13:37:31,717 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 13:37:31,717 INFO Node <naming_instance_metadata/c9c0dbb40478:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 13:37:31,718 INFO Fail to find the next candidate.
+
+2024-10-14 13:37:31,718 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 13:37:31,739 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=c9c0dbb40478:7848, cost time=19 ms
+
+2024-10-14 13:37:31,739 INFO Shutting down FSMCaller...
+
+2024-10-14 13:37:31,740 INFO onShutdown.
+
+2024-10-14 13:37:31,741 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@43b2e9b[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:37:31,741 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@22782b01[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:37:31,742 INFO The number of active nodes decrement to 1.
+
+2024-10-14 13:37:31,742 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_instance_metadata/c9c0dbb40478:7848>'}.
+
+2024-10-14 13:37:31,742 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_instance_metadata/c9c0dbb40478:7848>'}.
+
+2024-10-14 13:37:31,742 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_instance_metadata/c9c0dbb40478:7848>'}.
+
+2024-10-14 13:37:31,742 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_instance_metadata/c9c0dbb40478:7848>'}.
+
+2024-10-14 13:37:31,743 INFO Node <naming_instance_metadata/c9c0dbb40478:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 13:37:31,744 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 13:37:31,744 INFO Node <naming_persistent_service_v2/c9c0dbb40478:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 13:37:31,745 INFO Fail to find the next candidate.
+
+2024-10-14 13:37:31,746 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 13:37:31,751 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=c9c0dbb40478:7848, cost time=4 ms
+
+2024-10-14 13:37:31,752 INFO Shutting down FSMCaller...
+
+2024-10-14 13:37:31,752 INFO onShutdown.
+
+2024-10-14 13:37:31,754 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@ac02676[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:37:31,755 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@7bddf82e[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:37:31,757 INFO The number of active nodes decrement to 0.
+
+2024-10-14 13:37:31,765 INFO ThreadPool is terminated: JRaft-Global-ElectionTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@59809454[Shutting down, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 13:37:31,766 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_persistent_service_v2/c9c0dbb40478:7848>'}.
+
+2024-10-14 13:37:31,767 INFO ThreadPool is terminated: JRaft-Global-VoteTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@65085eeb[Shutting down, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 13:37:31,767 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_persistent_service_v2/c9c0dbb40478:7848>'}.
+
+2024-10-14 13:37:31,772 INFO ThreadPool is terminated: JRaft-Global-StepDownTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@2aa5c7d6[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 111].
+
+2024-10-14 13:37:31,772 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_persistent_service_v2/c9c0dbb40478:7848>'}.
+
+2024-10-14 13:37:31,837 INFO ThreadPool is terminated: JRaft-Global-SnapshotTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@6d08f47c[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:37:31,840 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_persistent_service_v2/c9c0dbb40478:7848>'}.
+
+2024-10-14 13:37:31,844 INFO Node <naming_persistent_service_v2/c9c0dbb40478:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 13:37:31,847 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 13:37:31,854 INFO Shutdown managed channel: c9c0dbb40478:7848, ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=10, target=c9c0dbb40478:7848}}.
+
+2024-10-14 13:37:31,931 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@5f3dc3a8[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 72].
+
+2024-10-14 13:37:31,908 INFO Connection disconnected: /172.19.0.4:46838
+
+2024-10-14 13:40:02,838 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2024-10-14 13:40:02,949 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2024-10-14 13:40:03,185 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2024-10-14 13:40:03,186 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2024-10-14 13:40:03,186 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2024-10-14 13:40:03,191 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2024-10-14 13:40:03,332 INFO The number of active nodes increment to 1.
+
+2024-10-14 13:40:03,531 INFO Starts FSMCaller successfully.
+
+2024-10-14 13:40:03,537 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot.
+
+2024-10-14 13:40:03,565 INFO Node <naming_persistent_service_v2/0bef3510b423:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=0bef3510b423:7848, oldConf=.
+
+2024-10-14 13:40:03,571 INFO Node <naming_persistent_service_v2/0bef3510b423:7848> start vote and grant vote self, term=0.
+
+2024-10-14 13:40:03,603 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=0bef3510b423:7848, cost time=25 ms
+
+2024-10-14 13:40:03,604 INFO Node <naming_persistent_service_v2/0bef3510b423:7848> become leader of group, term=1, conf=0bef3510b423:7848, oldConf=.
+
+2024-10-14 13:40:03,607 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2024-10-14 13:40:03,615 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 13:40:03,615 INFO Start the RaftGroupService successfully.
+
+2024-10-14 13:40:03,659 INFO onLeaderStart: term=1.
+
+2024-10-14 13:40:03,732 INFO The number of active nodes increment to 2.
+
+2024-10-14 13:40:03,929 INFO Starts FSMCaller successfully.
+
+2024-10-14 13:40:03,932 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot.
+
+2024-10-14 13:40:03,936 INFO Node <naming_instance_metadata/0bef3510b423:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=0bef3510b423:7848, oldConf=.
+
+2024-10-14 13:40:03,942 INFO Node <naming_instance_metadata/0bef3510b423:7848> start vote and grant vote self, term=0.
+
+2024-10-14 13:40:03,948 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=0bef3510b423:7848, cost time=5 ms
+
+2024-10-14 13:40:03,948 INFO Node <naming_instance_metadata/0bef3510b423:7848> become leader of group, term=1, conf=0bef3510b423:7848, oldConf=.
+
+2024-10-14 13:40:03,949 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 13:40:03,949 INFO Start the RaftGroupService successfully.
+
+2024-10-14 13:40:03,953 INFO onLeaderStart: term=1.
+
+2024-10-14 13:40:04,013 WARN Channel in TRANSIENT_FAILURE state: 0bef3510b423:7848.
+
+2024-10-14 13:40:04,018 WARN Channel in SHUTDOWN state: 0bef3510b423:7848.
+
+2024-10-14 13:40:04,048 INFO The number of active nodes increment to 3.
+
+2024-10-14 13:40:04,071 INFO Starts FSMCaller successfully.
+
+2024-10-14 13:40:04,071 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_service_metadata/snapshot.
+
+2024-10-14 13:40:04,072 INFO Node <naming_service_metadata/0bef3510b423:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=0bef3510b423:7848, oldConf=.
+
+2024-10-14 13:40:04,073 INFO Node <naming_service_metadata/0bef3510b423:7848> start vote and grant vote self, term=0.
+
+2024-10-14 13:40:04,075 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=0bef3510b423:7848, cost time=2 ms
+
+2024-10-14 13:40:04,075 INFO Node <naming_service_metadata/0bef3510b423:7848> become leader of group, term=1, conf=0bef3510b423:7848, oldConf=.
+
+2024-10-14 13:40:04,075 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 13:40:04,076 INFO Start the RaftGroupService successfully.
+
+2024-10-14 13:40:04,080 INFO onLeaderStart: term=1.
+
+2024-10-14 13:40:05,100 ERROR Fail to connect 0bef3510b423:7848, remoting exception: java.util.concurrent.TimeoutException.
+
+2024-10-14 13:40:05,101 ERROR Fail to connect 0bef3510b423:7848, remoting exception: java.util.concurrent.TimeoutException.
+
+2024-10-14 13:40:05,136 ERROR Fail to connect peer 0bef3510b423:7848 to get leader for group naming_persistent_service_v2.
+
+2024-10-14 13:40:05,138 ERROR Fail to connect peer 0bef3510b423:7848 to get leader for group naming_instance_metadata.
+
+2024-10-14 13:44:18,789 INFO Node <naming_service_metadata/0bef3510b423:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 13:44:18,794 INFO Fail to find the next candidate.
+
+2024-10-14 13:44:18,794 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 13:44:18,833 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=0bef3510b423:7848, cost time=30 ms
+
+2024-10-14 13:44:18,834 INFO Shutting down FSMCaller...
+
+2024-10-14 13:44:18,836 INFO onShutdown.
+
+2024-10-14 13:44:18,838 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@71a2ff34[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:44:18,841 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@6c366f9a[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:44:18,842 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_service_metadata/0bef3510b423:7848>'}.
+
+2024-10-14 13:44:18,843 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_service_metadata/0bef3510b423:7848>'}.
+
+2024-10-14 13:44:18,844 INFO The number of active nodes decrement to 2.
+
+2024-10-14 13:44:18,844 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_service_metadata/0bef3510b423:7848>'}.
+
+2024-10-14 13:44:18,844 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_service_metadata/0bef3510b423:7848>'}.
+
+2024-10-14 13:44:18,845 INFO Node <naming_service_metadata/0bef3510b423:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 13:44:18,845 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 13:44:18,845 INFO Node <naming_instance_metadata/0bef3510b423:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 13:44:18,846 INFO Fail to find the next candidate.
+
+2024-10-14 13:44:18,847 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 13:44:18,851 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=0bef3510b423:7848, cost time=2 ms
+
+2024-10-14 13:44:18,851 INFO Shutting down FSMCaller...
+
+2024-10-14 13:44:18,851 INFO onShutdown.
+
+2024-10-14 13:44:18,852 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@48f0278f[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:44:18,852 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@38d48c90[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:44:18,852 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_instance_metadata/0bef3510b423:7848>'}.
+
+2024-10-14 13:44:18,853 INFO The number of active nodes decrement to 1.
+
+2024-10-14 13:44:18,853 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_instance_metadata/0bef3510b423:7848>'}.
+
+2024-10-14 13:44:18,853 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_instance_metadata/0bef3510b423:7848>'}.
+
+2024-10-14 13:44:18,853 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_instance_metadata/0bef3510b423:7848>'}.
+
+2024-10-14 13:44:18,853 INFO Node <naming_instance_metadata/0bef3510b423:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 13:44:18,854 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 13:44:18,854 INFO Node <naming_persistent_service_v2/0bef3510b423:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 13:44:18,854 INFO Fail to find the next candidate.
+
+2024-10-14 13:44:18,854 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 13:44:18,857 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=0bef3510b423:7848, cost time=1 ms
+
+2024-10-14 13:44:18,857 INFO Shutting down FSMCaller...
+
+2024-10-14 13:44:18,857 INFO onShutdown.
+
+2024-10-14 13:44:18,859 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@61e69745[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:44:18,860 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@6069463e[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:44:18,861 INFO The number of active nodes decrement to 0.
+
+2024-10-14 13:44:18,871 INFO ThreadPool is terminated: JRaft-Global-ElectionTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@321d5ce3[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 13:44:18,871 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_persistent_service_v2/0bef3510b423:7848>'}.
+
+2024-10-14 13:44:18,872 INFO ThreadPool is terminated: JRaft-Global-VoteTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@1cea3543[Shutting down, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 13:44:18,872 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_persistent_service_v2/0bef3510b423:7848>'}.
+
+2024-10-14 13:44:18,875 INFO ThreadPool is terminated: JRaft-Global-StepDownTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@46b415cf[Shutting down, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 303].
+
+2024-10-14 13:44:18,877 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_persistent_service_v2/0bef3510b423:7848>'}.
+
+2024-10-14 13:44:18,877 INFO ThreadPool is terminated: JRaft-Global-SnapshotTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@488f141d[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 13:44:18,878 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_persistent_service_v2/0bef3510b423:7848>'}.
+
+2024-10-14 13:44:18,878 INFO Node <naming_persistent_service_v2/0bef3510b423:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 13:44:18,878 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 13:44:18,879 INFO Shutdown managed channel: 0bef3510b423:7848, ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=10, target=0bef3510b423:7848}}.
+
+2024-10-14 13:44:18,901 INFO Connection disconnected: /172.19.0.4:49484
+
+2024-10-14 13:44:18,911 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@cc89cb3[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 224].
+
+2024-10-14 13:59:24,805 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2024-10-14 13:59:24,922 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2024-10-14 13:59:25,304 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2024-10-14 13:59:25,305 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2024-10-14 13:59:25,306 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2024-10-14 13:59:25,318 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2024-10-14 13:59:25,326 INFO The number of active nodes increment to 1.
+
+2024-10-14 13:59:25,524 INFO Starts FSMCaller successfully.
+
+2024-10-14 13:59:25,532 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot.
+
+2024-10-14 13:59:25,562 INFO Node <naming_persistent_service_v2/974ffe3583f5:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=974ffe3583f5:7848, oldConf=.
+
+2024-10-14 13:59:25,566 INFO Node <naming_persistent_service_v2/974ffe3583f5:7848> start vote and grant vote self, term=0.
+
+2024-10-14 13:59:25,598 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=974ffe3583f5:7848, cost time=26 ms
+
+2024-10-14 13:59:25,599 INFO Node <naming_persistent_service_v2/974ffe3583f5:7848> become leader of group, term=1, conf=974ffe3583f5:7848, oldConf=.
+
+2024-10-14 13:59:25,602 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2024-10-14 13:59:25,612 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 13:59:25,613 INFO Start the RaftGroupService successfully.
+
+2024-10-14 13:59:25,639 INFO onLeaderStart: term=1.
+
+2024-10-14 13:59:25,673 INFO The number of active nodes increment to 2.
+
+2024-10-14 13:59:25,859 INFO Starts FSMCaller successfully.
+
+2024-10-14 13:59:25,863 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot.
+
+2024-10-14 13:59:25,868 INFO Node <naming_instance_metadata/974ffe3583f5:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=974ffe3583f5:7848, oldConf=.
+
+2024-10-14 13:59:25,869 INFO Node <naming_instance_metadata/974ffe3583f5:7848> start vote and grant vote self, term=0.
+
+2024-10-14 13:59:25,873 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=974ffe3583f5:7848, cost time=3 ms
+
+2024-10-14 13:59:25,873 INFO Node <naming_instance_metadata/974ffe3583f5:7848> become leader of group, term=1, conf=974ffe3583f5:7848, oldConf=.
+
+2024-10-14 13:59:25,873 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 13:59:25,874 INFO Start the RaftGroupService successfully.
+
+2024-10-14 13:59:25,878 INFO onLeaderStart: term=1.
+
+2024-10-14 13:59:25,948 INFO The number of active nodes increment to 3.
+
+2024-10-14 13:59:25,979 WARN Channel in TRANSIENT_FAILURE state: 974ffe3583f5:7848.
+
+2024-10-14 13:59:25,980 WARN Channel in SHUTDOWN state: 974ffe3583f5:7848.
+
+2024-10-14 13:59:25,990 INFO Starts FSMCaller successfully.
+
+2024-10-14 13:59:25,990 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_service_metadata/snapshot.
+
+2024-10-14 13:59:25,992 INFO Node <naming_service_metadata/974ffe3583f5:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=974ffe3583f5:7848, oldConf=.
+
+2024-10-14 13:59:25,992 INFO Node <naming_service_metadata/974ffe3583f5:7848> start vote and grant vote self, term=0.
+
+2024-10-14 13:59:25,995 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=974ffe3583f5:7848, cost time=1 ms
+
+2024-10-14 13:59:25,995 INFO Node <naming_service_metadata/974ffe3583f5:7848> become leader of group, term=1, conf=974ffe3583f5:7848, oldConf=.
+
+2024-10-14 13:59:25,996 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 13:59:25,997 INFO Start the RaftGroupService successfully.
+
+2024-10-14 13:59:25,999 INFO onLeaderStart: term=1.
+
+2024-10-14 13:59:27,338 ERROR Fail to connect 974ffe3583f5:7848, remoting exception: java.util.concurrent.TimeoutException.
+
+2024-10-14 13:59:27,340 ERROR Fail to connect 974ffe3583f5:7848, remoting exception: java.util.concurrent.TimeoutException.
+
+2024-10-14 13:59:27,388 ERROR Fail to connect peer 974ffe3583f5:7848 to get leader for group naming_persistent_service_v2.
+
+2024-10-14 13:59:27,388 ERROR Fail to connect peer 974ffe3583f5:7848 to get leader for group naming_instance_metadata.
+
+2024-10-14 14:02:10,613 INFO Node <naming_service_metadata/974ffe3583f5:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 14:02:10,620 INFO Fail to find the next candidate.
+
+2024-10-14 14:02:10,621 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 14:02:10,664 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=974ffe3583f5:7848, cost time=28 ms
+
+2024-10-14 14:02:10,677 INFO Shutting down FSMCaller...
+
+2024-10-14 14:02:10,689 INFO onShutdown.
+
+2024-10-14 14:02:10,694 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@295c39d4[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:02:10,697 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@6a87a2b1[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:02:10,699 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_service_metadata/974ffe3583f5:7848>'}.
+
+2024-10-14 14:02:10,700 INFO The number of active nodes decrement to 2.
+
+2024-10-14 14:02:10,703 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_service_metadata/974ffe3583f5:7848>'}.
+
+2024-10-14 14:02:10,707 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_service_metadata/974ffe3583f5:7848>'}.
+
+2024-10-14 14:02:10,708 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_service_metadata/974ffe3583f5:7848>'}.
+
+2024-10-14 14:02:10,712 INFO Node <naming_service_metadata/974ffe3583f5:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 14:02:10,714 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 14:02:10,715 INFO Node <naming_instance_metadata/974ffe3583f5:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 14:02:10,721 INFO Fail to find the next candidate.
+
+2024-10-14 14:02:10,723 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 14:02:10,782 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=974ffe3583f5:7848, cost time=20 ms
+
+2024-10-14 14:02:10,783 INFO Shutting down FSMCaller...
+
+2024-10-14 14:02:10,786 INFO onShutdown.
+
+2024-10-14 14:02:10,817 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@2ef68fd[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:02:10,823 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@785269b9[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:02:10,825 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_instance_metadata/974ffe3583f5:7848>'}.
+
+2024-10-14 14:02:10,828 INFO The number of active nodes decrement to 1.
+
+2024-10-14 14:02:10,827 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_instance_metadata/974ffe3583f5:7848>'}.
+
+2024-10-14 14:02:10,830 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_instance_metadata/974ffe3583f5:7848>'}.
+
+2024-10-14 14:02:10,831 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_instance_metadata/974ffe3583f5:7848>'}.
+
+2024-10-14 14:02:10,833 INFO Node <naming_instance_metadata/974ffe3583f5:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 14:02:10,834 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 14:02:10,835 INFO Node <naming_persistent_service_v2/974ffe3583f5:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 14:02:10,838 INFO Fail to find the next candidate.
+
+2024-10-14 14:02:10,839 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 14:02:10,877 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=974ffe3583f5:7848, cost time=29 ms
+
+2024-10-14 14:02:10,879 INFO Shutting down FSMCaller...
+
+2024-10-14 14:02:10,881 INFO onShutdown.
+
+2024-10-14 14:02:10,896 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@3b59e1c2[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:02:10,899 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@57d70f12[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:02:10,904 INFO The number of active nodes decrement to 0.
+
+2024-10-14 14:02:10,970 INFO ThreadPool is terminated: JRaft-Global-ElectionTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@6cc72d93[Shutting down, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 14:02:10,979 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_persistent_service_v2/974ffe3583f5:7848>'}.
+
+2024-10-14 14:02:10,990 INFO ThreadPool is terminated: JRaft-Global-VoteTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@687eb843[Shutting down, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 14:02:10,995 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_persistent_service_v2/974ffe3583f5:7848>'}.
+
+2024-10-14 14:02:11,021 INFO ThreadPool is terminated: JRaft-Global-StepDownTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@34b87a5c[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 195].
+
+2024-10-14 14:02:11,023 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_persistent_service_v2/974ffe3583f5:7848>'}.
+
+2024-10-14 14:02:11,026 INFO ThreadPool is terminated: JRaft-Global-SnapshotTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@5986cd76[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:02:11,028 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_persistent_service_v2/974ffe3583f5:7848>'}.
+
+2024-10-14 14:02:11,031 INFO Node <naming_persistent_service_v2/974ffe3583f5:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 14:02:11,033 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 14:02:11,036 INFO Shutdown managed channel: 974ffe3583f5:7848, ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=10, target=974ffe3583f5:7848}}.
+
+2024-10-14 14:02:11,163 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@6eed1b9d[Shutting down, pool size = 13, active threads = 0, queued tasks = 0, completed tasks = 162].
+
+2024-10-14 14:02:11,181 INFO Connection disconnected: /172.19.0.4:45728
+
+2024-10-14 14:29:44,408 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2024-10-14 14:29:44,498 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2024-10-14 14:29:44,961 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2024-10-14 14:29:44,962 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2024-10-14 14:29:44,963 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2024-10-14 14:29:44,967 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2024-10-14 14:29:44,975 INFO The number of active nodes increment to 1.
+
+2024-10-14 14:29:45,218 INFO Starts FSMCaller successfully.
+
+2024-10-14 14:29:45,228 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot.
+
+2024-10-14 14:29:45,255 INFO Node <naming_persistent_service_v2/099bfbede7f5:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=099bfbede7f5:7848, oldConf=.
+
+2024-10-14 14:29:45,258 INFO Node <naming_persistent_service_v2/099bfbede7f5:7848> start vote and grant vote self, term=0.
+
+2024-10-14 14:29:45,296 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=099bfbede7f5:7848, cost time=30 ms
+
+2024-10-14 14:29:45,297 INFO Node <naming_persistent_service_v2/099bfbede7f5:7848> become leader of group, term=1, conf=099bfbede7f5:7848, oldConf=.
+
+2024-10-14 14:29:45,301 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2024-10-14 14:29:45,305 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 14:29:45,305 INFO Start the RaftGroupService successfully.
+
+2024-10-14 14:29:45,325 INFO onLeaderStart: term=1.
+
+2024-10-14 14:29:45,574 INFO The number of active nodes increment to 2.
+
+2024-10-14 14:29:45,655 INFO Starts FSMCaller successfully.
+
+2024-10-14 14:29:45,656 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot.
+
+2024-10-14 14:29:45,661 INFO Node <naming_instance_metadata/099bfbede7f5:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=099bfbede7f5:7848, oldConf=.
+
+2024-10-14 14:29:45,664 INFO Node <naming_instance_metadata/099bfbede7f5:7848> start vote and grant vote self, term=0.
+
+2024-10-14 14:29:45,668 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=099bfbede7f5:7848, cost time=3 ms
+
+2024-10-14 14:29:45,668 INFO Node <naming_instance_metadata/099bfbede7f5:7848> become leader of group, term=1, conf=099bfbede7f5:7848, oldConf=.
+
+2024-10-14 14:29:45,669 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 14:29:45,669 INFO Start the RaftGroupService successfully.
+
+2024-10-14 14:29:45,678 INFO onLeaderStart: term=1.
+
+2024-10-14 14:29:45,702 WARN Channel in TRANSIENT_FAILURE state: 099bfbede7f5:7848.
+
+2024-10-14 14:29:45,709 WARN Channel in SHUTDOWN state: 099bfbede7f5:7848.
+
+2024-10-14 14:29:45,769 INFO The number of active nodes increment to 3.
+
+2024-10-14 14:29:45,992 INFO Starts FSMCaller successfully.
+
+2024-10-14 14:29:45,995 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_service_metadata/snapshot.
+
+2024-10-14 14:29:45,997 INFO Node <naming_service_metadata/099bfbede7f5:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=099bfbede7f5:7848, oldConf=.
+
+2024-10-14 14:29:45,999 INFO Node <naming_service_metadata/099bfbede7f5:7848> start vote and grant vote self, term=0.
+
+2024-10-14 14:29:46,004 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=099bfbede7f5:7848, cost time=4 ms
+
+2024-10-14 14:29:46,005 INFO Node <naming_service_metadata/099bfbede7f5:7848> become leader of group, term=1, conf=099bfbede7f5:7848, oldConf=.
+
+2024-10-14 14:29:46,008 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 14:29:46,010 INFO Start the RaftGroupService successfully.
+
+2024-10-14 14:29:46,015 INFO onLeaderStart: term=1.
+
+2024-10-14 14:29:46,805 ERROR Fail to connect 099bfbede7f5:7848, remoting exception: java.util.concurrent.TimeoutException.
+
+2024-10-14 14:29:46,806 ERROR Fail to connect 099bfbede7f5:7848, remoting exception: java.util.concurrent.TimeoutException.
+
+2024-10-14 14:29:46,860 ERROR Fail to connect peer 099bfbede7f5:7848 to get leader for group naming_persistent_service_v2.
+
+2024-10-14 14:29:46,865 ERROR Fail to connect peer 099bfbede7f5:7848 to get leader for group naming_instance_metadata.
+
+2024-10-14 14:32:52,392 INFO Node <naming_service_metadata/099bfbede7f5:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 14:32:52,396 INFO Fail to find the next candidate.
+
+2024-10-14 14:32:52,396 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 14:32:52,427 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=099bfbede7f5:7848, cost time=18 ms
+
+2024-10-14 14:32:52,428 INFO Shutting down FSMCaller...
+
+2024-10-14 14:32:52,430 INFO onShutdown.
+
+2024-10-14 14:32:52,431 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@2b230794[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:32:52,432 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@748eb789[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:32:52,433 INFO The number of active nodes decrement to 2.
+
+2024-10-14 14:32:52,434 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_service_metadata/099bfbede7f5:7848>'}.
+
+2024-10-14 14:32:52,435 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_service_metadata/099bfbede7f5:7848>'}.
+
+2024-10-14 14:32:52,435 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_service_metadata/099bfbede7f5:7848>'}.
+
+2024-10-14 14:32:52,435 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_service_metadata/099bfbede7f5:7848>'}.
+
+2024-10-14 14:32:52,436 INFO Node <naming_service_metadata/099bfbede7f5:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 14:32:52,436 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 14:32:52,436 INFO Node <naming_instance_metadata/099bfbede7f5:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 14:32:52,437 INFO Fail to find the next candidate.
+
+2024-10-14 14:32:52,437 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 14:32:52,440 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=099bfbede7f5:7848, cost time=2 ms
+
+2024-10-14 14:32:52,440 INFO Shutting down FSMCaller...
+
+2024-10-14 14:32:52,440 INFO onShutdown.
+
+2024-10-14 14:32:52,442 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@3741cd9b[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:32:52,442 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@28802e8f[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:32:52,443 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_instance_metadata/099bfbede7f5:7848>'}.
+
+2024-10-14 14:32:52,444 INFO The number of active nodes decrement to 1.
+
+2024-10-14 14:32:52,444 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_instance_metadata/099bfbede7f5:7848>'}.
+
+2024-10-14 14:32:52,444 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_instance_metadata/099bfbede7f5:7848>'}.
+
+2024-10-14 14:32:52,444 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_instance_metadata/099bfbede7f5:7848>'}.
+
+2024-10-14 14:32:52,445 INFO Node <naming_instance_metadata/099bfbede7f5:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 14:32:52,445 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 14:32:52,445 INFO Node <naming_persistent_service_v2/099bfbede7f5:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 14:32:52,446 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 14:32:52,446 INFO Fail to find the next candidate.
+
+2024-10-14 14:32:52,455 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=099bfbede7f5:7848, cost time=7 ms
+
+2024-10-14 14:32:52,455 INFO Shutting down FSMCaller...
+
+2024-10-14 14:32:52,456 INFO onShutdown.
+
+2024-10-14 14:32:52,457 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@7eecd433[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:32:52,457 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@2d728358[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:32:52,459 INFO The number of active nodes decrement to 0.
+
+2024-10-14 14:32:52,472 INFO ThreadPool is terminated: JRaft-Global-ElectionTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@27934323[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 14:32:52,472 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_persistent_service_v2/099bfbede7f5:7848>'}.
+
+2024-10-14 14:32:52,473 INFO ThreadPool is terminated: JRaft-Global-VoteTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@46d3e8cc[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 14:32:52,473 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_persistent_service_v2/099bfbede7f5:7848>'}.
+
+2024-10-14 14:32:52,476 INFO ThreadPool is terminated: JRaft-Global-StepDownTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@296060b0[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 222].
+
+2024-10-14 14:32:52,477 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_persistent_service_v2/099bfbede7f5:7848>'}.
+
+2024-10-14 14:32:52,478 INFO ThreadPool is terminated: JRaft-Global-SnapshotTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@28f3947a[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:32:52,478 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_persistent_service_v2/099bfbede7f5:7848>'}.
+
+2024-10-14 14:32:52,479 INFO Node <naming_persistent_service_v2/099bfbede7f5:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 14:32:52,479 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 14:32:52,480 INFO Shutdown managed channel: 099bfbede7f5:7848, ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=10, target=099bfbede7f5:7848}}.
+
+2024-10-14 14:32:52,503 INFO Connection disconnected: /172.19.0.4:51970
+
+2024-10-14 14:32:52,512 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@1125dcc6[Shutting down, pool size = 21, active threads = 0, queued tasks = 0, completed tasks = 196].
+
+2024-10-14 14:33:24,763 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2024-10-14 14:33:24,846 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2024-10-14 14:33:25,251 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2024-10-14 14:33:25,252 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2024-10-14 14:33:25,253 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2024-10-14 14:33:25,257 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2024-10-14 14:33:25,264 INFO The number of active nodes increment to 1.
+
+2024-10-14 14:33:25,447 INFO Starts FSMCaller successfully.
+
+2024-10-14 14:33:25,455 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot.
+
+2024-10-14 14:33:25,480 INFO Node <naming_persistent_service_v2/623e6f0e610b:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=623e6f0e610b:7848, oldConf=.
+
+2024-10-14 14:33:25,482 INFO Node <naming_persistent_service_v2/623e6f0e610b:7848> start vote and grant vote self, term=0.
+
+2024-10-14 14:33:25,678 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=623e6f0e610b:7848, cost time=31 ms
+
+2024-10-14 14:33:25,680 INFO Node <naming_persistent_service_v2/623e6f0e610b:7848> become leader of group, term=1, conf=623e6f0e610b:7848, oldConf=.
+
+2024-10-14 14:33:25,685 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2024-10-14 14:33:25,704 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 14:33:25,704 INFO Start the RaftGroupService successfully.
+
+2024-10-14 14:33:25,736 INFO onLeaderStart: term=1.
+
+2024-10-14 14:33:25,834 INFO The number of active nodes increment to 2.
+
+2024-10-14 14:33:25,863 INFO Starts FSMCaller successfully.
+
+2024-10-14 14:33:25,863 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot.
+
+2024-10-14 14:33:25,869 INFO Node <naming_instance_metadata/623e6f0e610b:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=623e6f0e610b:7848, oldConf=.
+
+2024-10-14 14:33:25,873 INFO Node <naming_instance_metadata/623e6f0e610b:7848> start vote and grant vote self, term=0.
+
+2024-10-14 14:33:25,876 WARN Channel in TRANSIENT_FAILURE state: 623e6f0e610b:7848.
+
+2024-10-14 14:33:25,878 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=623e6f0e610b:7848, cost time=4 ms
+
+2024-10-14 14:33:25,879 INFO Node <naming_instance_metadata/623e6f0e610b:7848> become leader of group, term=1, conf=623e6f0e610b:7848, oldConf=.
+
+2024-10-14 14:33:25,879 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 14:33:25,879 INFO Start the RaftGroupService successfully.
+
+2024-10-14 14:33:25,880 WARN Channel in SHUTDOWN state: 623e6f0e610b:7848.
+
+2024-10-14 14:33:25,895 INFO onLeaderStart: term=1.
+
+2024-10-14 14:33:26,137 INFO The number of active nodes increment to 3.
+
+2024-10-14 14:33:26,169 INFO Starts FSMCaller successfully.
+
+2024-10-14 14:33:26,170 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_service_metadata/snapshot.
+
+2024-10-14 14:33:26,172 INFO Node <naming_service_metadata/623e6f0e610b:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=623e6f0e610b:7848, oldConf=.
+
+2024-10-14 14:33:26,173 INFO Node <naming_service_metadata/623e6f0e610b:7848> start vote and grant vote self, term=0.
+
+2024-10-14 14:33:26,176 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=623e6f0e610b:7848, cost time=2 ms
+
+2024-10-14 14:33:26,177 INFO Node <naming_service_metadata/623e6f0e610b:7848> become leader of group, term=1, conf=623e6f0e610b:7848, oldConf=.
+
+2024-10-14 14:33:26,179 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 14:33:26,179 INFO Start the RaftGroupService successfully.
+
+2024-10-14 14:33:26,200 INFO onLeaderStart: term=1.
+
+2024-10-14 14:33:27,028 ERROR Fail to connect 623e6f0e610b:7848, remoting exception: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 0.714836250s. [buffered_nanos=747758626, waiting_for_connection].
+
+2024-10-14 14:33:27,036 ERROR Fail to connect peer 623e6f0e610b:7848 to get leader for group naming_persistent_service_v2.
+
+2024-10-14 14:33:52,105 INFO Node <naming_service_metadata/623e6f0e610b:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 14:33:52,111 INFO Fail to find the next candidate.
+
+2024-10-14 14:33:52,112 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 14:33:52,144 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=623e6f0e610b:7848, cost time=23 ms
+
+2024-10-14 14:33:52,146 INFO Shutting down FSMCaller...
+
+2024-10-14 14:33:52,149 INFO onShutdown.
+
+2024-10-14 14:33:52,152 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@7dfd5d52[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:33:52,155 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@1815e20e[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:33:52,155 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_service_metadata/623e6f0e610b:7848>'}.
+
+2024-10-14 14:33:52,156 INFO The number of active nodes decrement to 2.
+
+2024-10-14 14:33:52,156 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_service_metadata/623e6f0e610b:7848>'}.
+
+2024-10-14 14:33:52,157 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_service_metadata/623e6f0e610b:7848>'}.
+
+2024-10-14 14:33:52,157 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_service_metadata/623e6f0e610b:7848>'}.
+
+2024-10-14 14:33:52,157 INFO Node <naming_service_metadata/623e6f0e610b:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 14:33:52,157 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 14:33:52,158 INFO Node <naming_instance_metadata/623e6f0e610b:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 14:33:52,158 INFO Fail to find the next candidate.
+
+2024-10-14 14:33:52,160 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 14:33:52,167 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=623e6f0e610b:7848, cost time=6 ms
+
+2024-10-14 14:33:52,168 INFO Shutting down FSMCaller...
+
+2024-10-14 14:33:52,168 INFO onShutdown.
+
+2024-10-14 14:33:52,172 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@562c50f1[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:33:52,177 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@75189248[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:33:52,179 INFO The number of active nodes decrement to 1.
+
+2024-10-14 14:33:52,180 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_instance_metadata/623e6f0e610b:7848>'}.
+
+2024-10-14 14:33:52,181 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_instance_metadata/623e6f0e610b:7848>'}.
+
+2024-10-14 14:33:52,181 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_instance_metadata/623e6f0e610b:7848>'}.
+
+2024-10-14 14:33:52,181 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_instance_metadata/623e6f0e610b:7848>'}.
+
+2024-10-14 14:33:52,182 INFO Node <naming_instance_metadata/623e6f0e610b:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 14:33:52,182 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 14:33:52,182 INFO Node <naming_persistent_service_v2/623e6f0e610b:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 14:33:52,183 INFO Fail to find the next candidate.
+
+2024-10-14 14:33:52,183 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 14:33:52,190 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=623e6f0e610b:7848, cost time=5 ms
+
+2024-10-14 14:33:52,190 INFO Shutting down FSMCaller...
+
+2024-10-14 14:33:52,190 INFO onShutdown.
+
+2024-10-14 14:33:52,191 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@718d8e1a[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:33:52,191 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@31eb51f3[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:33:52,191 INFO The number of active nodes decrement to 0.
+
+2024-10-14 14:33:52,198 INFO ThreadPool is terminated: JRaft-Global-ElectionTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@88a8e51[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 14:33:52,198 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_persistent_service_v2/623e6f0e610b:7848>'}.
+
+2024-10-14 14:33:52,199 INFO ThreadPool is terminated: JRaft-Global-VoteTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@61c598c7[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 14:33:52,199 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_persistent_service_v2/623e6f0e610b:7848>'}.
+
+2024-10-14 14:33:52,201 INFO ThreadPool is terminated: JRaft-Global-StepDownTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@a907d34[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 30].
+
+2024-10-14 14:33:52,201 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_persistent_service_v2/623e6f0e610b:7848>'}.
+
+2024-10-14 14:33:52,202 INFO ThreadPool is terminated: JRaft-Global-SnapshotTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@3011c27b[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:33:52,202 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_persistent_service_v2/623e6f0e610b:7848>'}.
+
+2024-10-14 14:33:52,202 INFO Node <naming_persistent_service_v2/623e6f0e610b:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 14:33:52,203 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 14:33:52,203 INFO Shutdown managed channel: 623e6f0e610b:7848, ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=10, target=623e6f0e610b:7848}}.
+
+2024-10-14 14:33:52,230 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@13252156[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 28].
+
+2024-10-14 14:33:52,230 INFO Connection disconnected: /172.19.0.4:57296
+
+2024-10-14 14:34:23,798 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2024-10-14 14:34:23,888 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2024-10-14 14:34:24,309 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2024-10-14 14:34:24,310 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2024-10-14 14:34:24,310 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2024-10-14 14:34:24,315 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2024-10-14 14:34:24,323 INFO The number of active nodes increment to 1.
+
+2024-10-14 14:34:24,568 INFO Starts FSMCaller successfully.
+
+2024-10-14 14:34:24,743 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot.
+
+2024-10-14 14:34:24,819 INFO Node <naming_persistent_service_v2/fd7311f4375d:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=fd7311f4375d:7848, oldConf=.
+
+2024-10-14 14:34:24,823 INFO Node <naming_persistent_service_v2/fd7311f4375d:7848> start vote and grant vote self, term=0.
+
+2024-10-14 14:34:24,866 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=fd7311f4375d:7848, cost time=35 ms
+
+2024-10-14 14:34:24,867 INFO Node <naming_persistent_service_v2/fd7311f4375d:7848> become leader of group, term=1, conf=fd7311f4375d:7848, oldConf=.
+
+2024-10-14 14:34:24,870 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2024-10-14 14:34:24,875 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 14:34:24,875 INFO Start the RaftGroupService successfully.
+
+2024-10-14 14:34:24,906 INFO onLeaderStart: term=1.
+
+2024-10-14 14:34:25,340 WARN Channel in TRANSIENT_FAILURE state: fd7311f4375d:7848.
+
+2024-10-14 14:34:25,344 WARN Channel in SHUTDOWN state: fd7311f4375d:7848.
+
+2024-10-14 14:34:25,356 INFO The number of active nodes increment to 2.
+
+2024-10-14 14:34:25,399 INFO Starts FSMCaller successfully.
+
+2024-10-14 14:34:25,399 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot.
+
+2024-10-14 14:34:25,402 INFO Node <naming_instance_metadata/fd7311f4375d:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=fd7311f4375d:7848, oldConf=.
+
+2024-10-14 14:34:25,405 INFO Node <naming_instance_metadata/fd7311f4375d:7848> start vote and grant vote self, term=0.
+
+2024-10-14 14:34:25,409 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=fd7311f4375d:7848, cost time=3 ms
+
+2024-10-14 14:34:25,409 INFO Node <naming_instance_metadata/fd7311f4375d:7848> become leader of group, term=1, conf=fd7311f4375d:7848, oldConf=.
+
+2024-10-14 14:34:25,410 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 14:34:25,410 INFO Start the RaftGroupService successfully.
+
+2024-10-14 14:34:25,413 INFO onLeaderStart: term=1.
+
+2024-10-14 14:34:25,620 INFO The number of active nodes increment to 3.
+
+2024-10-14 14:34:25,661 INFO Starts FSMCaller successfully.
+
+2024-10-14 14:34:25,662 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_service_metadata/snapshot.
+
+2024-10-14 14:34:25,664 INFO Node <naming_service_metadata/fd7311f4375d:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=fd7311f4375d:7848, oldConf=.
+
+2024-10-14 14:34:25,665 INFO Node <naming_service_metadata/fd7311f4375d:7848> start vote and grant vote self, term=0.
+
+2024-10-14 14:34:25,670 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=fd7311f4375d:7848, cost time=4 ms
+
+2024-10-14 14:34:25,670 INFO Node <naming_service_metadata/fd7311f4375d:7848> become leader of group, term=1, conf=fd7311f4375d:7848, oldConf=.
+
+2024-10-14 14:34:25,671 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 14:34:25,671 INFO Start the RaftGroupService successfully.
+
+2024-10-14 14:34:25,679 INFO onLeaderStart: term=1.
+
+2024-10-14 14:34:26,431 ERROR Fail to connect fd7311f4375d:7848, remoting exception: java.util.concurrent.TimeoutException.
+
+2024-10-14 14:34:26,451 ERROR Fail to connect peer fd7311f4375d:7848 to get leader for group naming_persistent_service_v2.
+
+2024-10-14 14:35:04,502 INFO Node <naming_service_metadata/fd7311f4375d:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 14:35:04,507 INFO Fail to find the next candidate.
+
+2024-10-14 14:35:04,508 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 14:35:04,564 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=fd7311f4375d:7848, cost time=44 ms
+
+2024-10-14 14:35:04,566 INFO Shutting down FSMCaller...
+
+2024-10-14 14:35:04,573 INFO onShutdown.
+
+2024-10-14 14:35:04,580 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@299ed9c6[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:35:04,587 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@6b1f9b8e[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:35:04,587 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_service_metadata/fd7311f4375d:7848>'}.
+
+2024-10-14 14:35:04,588 INFO The number of active nodes decrement to 2.
+
+2024-10-14 14:35:04,588 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_service_metadata/fd7311f4375d:7848>'}.
+
+2024-10-14 14:35:04,589 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_service_metadata/fd7311f4375d:7848>'}.
+
+2024-10-14 14:35:04,589 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_service_metadata/fd7311f4375d:7848>'}.
+
+2024-10-14 14:35:04,590 INFO Node <naming_service_metadata/fd7311f4375d:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 14:35:04,590 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 14:35:04,591 INFO Node <naming_instance_metadata/fd7311f4375d:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 14:35:04,593 INFO Fail to find the next candidate.
+
+2024-10-14 14:35:04,593 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 14:35:04,600 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=fd7311f4375d:7848, cost time=4 ms
+
+2024-10-14 14:35:04,601 INFO Shutting down FSMCaller...
+
+2024-10-14 14:35:04,601 INFO onShutdown.
+
+2024-10-14 14:35:04,603 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@5ac30f7f[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:35:04,615 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@6c9d215f[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:35:04,616 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_instance_metadata/fd7311f4375d:7848>'}.
+
+2024-10-14 14:35:04,616 INFO The number of active nodes decrement to 1.
+
+2024-10-14 14:35:04,617 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_instance_metadata/fd7311f4375d:7848>'}.
+
+2024-10-14 14:35:04,617 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_instance_metadata/fd7311f4375d:7848>'}.
+
+2024-10-14 14:35:04,617 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_instance_metadata/fd7311f4375d:7848>'}.
+
+2024-10-14 14:35:04,618 INFO Node <naming_instance_metadata/fd7311f4375d:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 14:35:04,620 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 14:35:04,621 INFO Node <naming_persistent_service_v2/fd7311f4375d:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 14:35:04,622 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 14:35:04,622 INFO Fail to find the next candidate.
+
+2024-10-14 14:35:04,629 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=fd7311f4375d:7848, cost time=5 ms
+
+2024-10-14 14:35:04,629 INFO Shutting down FSMCaller...
+
+2024-10-14 14:35:04,629 INFO onShutdown.
+
+2024-10-14 14:35:04,632 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@38fd88cc[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:35:04,633 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@2f454fca[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:35:04,635 INFO The number of active nodes decrement to 0.
+
+2024-10-14 14:35:04,648 INFO ThreadPool is terminated: JRaft-Global-ElectionTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@420b9a54[Shutting down, pool size = 3, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 14:35:04,648 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_persistent_service_v2/fd7311f4375d:7848>'}.
+
+2024-10-14 14:35:04,649 INFO ThreadPool is terminated: JRaft-Global-VoteTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@6325d194[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 14:35:04,649 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_persistent_service_v2/fd7311f4375d:7848>'}.
+
+2024-10-14 14:35:04,651 INFO ThreadPool is terminated: JRaft-Global-StepDownTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@23ec3763[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 45].
+
+2024-10-14 14:35:04,651 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_persistent_service_v2/fd7311f4375d:7848>'}.
+
+2024-10-14 14:35:04,652 INFO ThreadPool is terminated: JRaft-Global-SnapshotTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@15fc9d52[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 14:35:04,652 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_persistent_service_v2/fd7311f4375d:7848>'}.
+
+2024-10-14 14:35:04,653 INFO Node <naming_persistent_service_v2/fd7311f4375d:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 14:35:04,653 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 14:35:04,653 INFO Shutdown managed channel: fd7311f4375d:7848, ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=10, target=fd7311f4375d:7848}}.
+
+2024-10-14 14:35:04,693 INFO Connection disconnected: /172.19.0.4:54264
+
+2024-10-14 14:35:04,701 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@62722922[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 36].
+
+2024-10-14 14:38:14,439 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2024-10-14 14:38:14,551 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2024-10-14 14:38:14,932 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeDescribeSignalHandler] loading.
+
+2024-10-14 14:38:14,936 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.NodeMetricsSignalHandler] loading.
+
+2024-10-14 14:38:14,937 INFO SPI service [com.alipay.sofa.jraft.util.JRaftSignalHandler - com.alipay.sofa.jraft.ThreadPoolMetricsSignalHandler] loading.
+
+2024-10-14 14:38:14,956 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2024-10-14 14:38:14,962 INFO The number of active nodes increment to 1.
+
+2024-10-14 14:38:15,390 INFO Starts FSMCaller successfully.
+
+2024-10-14 14:38:15,399 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot.
+
+2024-10-14 14:38:15,413 INFO Node <naming_persistent_service_v2/ff626a511784:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=ff626a511784:7848, oldConf=.
+
+2024-10-14 14:38:15,416 INFO Node <naming_persistent_service_v2/ff626a511784:7848> start vote and grant vote self, term=0.
+
+2024-10-14 14:38:15,457 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=ff626a511784:7848, cost time=31 ms
+
+2024-10-14 14:38:15,457 INFO Node <naming_persistent_service_v2/ff626a511784:7848> become leader of group, term=1, conf=ff626a511784:7848, oldConf=.
+
+2024-10-14 14:38:15,461 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2024-10-14 14:38:15,473 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 14:38:15,473 INFO Start the RaftGroupService successfully.
+
+2024-10-14 14:38:15,507 INFO onLeaderStart: term=1.
+
+2024-10-14 14:38:15,668 INFO The number of active nodes increment to 2.
+
+2024-10-14 14:38:15,724 INFO Starts FSMCaller successfully.
+
+2024-10-14 14:38:15,724 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot.
+
+2024-10-14 14:38:15,733 INFO Node <naming_instance_metadata/ff626a511784:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=ff626a511784:7848, oldConf=.
+
+2024-10-14 14:38:15,734 INFO Node <naming_instance_metadata/ff626a511784:7848> start vote and grant vote self, term=0.
+
+2024-10-14 14:38:15,740 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=ff626a511784:7848, cost time=4 ms
+
+2024-10-14 14:38:15,741 INFO Node <naming_instance_metadata/ff626a511784:7848> become leader of group, term=1, conf=ff626a511784:7848, oldConf=.
+
+2024-10-14 14:38:15,742 INFO Creating new channel to: ff626a511784:7848.
+
+2024-10-14 14:38:15,750 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 14:38:15,751 INFO Start the RaftGroupService successfully.
+
+2024-10-14 14:38:15,800 INFO onLeaderStart: term=1.
+
+2024-10-14 14:38:16,392 INFO The number of active nodes increment to 3.
+
+2024-10-14 14:38:16,495 INFO Starts FSMCaller successfully.
+
+2024-10-14 14:38:16,498 WARN No data for snapshot reader /home/nacos/data/protocol/raft/naming_service_metadata/snapshot.
+
+2024-10-14 14:38:16,505 INFO Node <naming_service_metadata/ff626a511784:7848> init, term=0, lastLogId=LogId [index=0, term=0], conf=ff626a511784:7848, oldConf=.
+
+2024-10-14 14:38:16,508 INFO Node <naming_service_metadata/ff626a511784:7848> start vote and grant vote self, term=0.
+
+2024-10-14 14:38:16,518 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=ff626a511784:7848, cost time=6 ms
+
+2024-10-14 14:38:16,518 INFO Node <naming_service_metadata/ff626a511784:7848> become leader of group, term=1, conf=ff626a511784:7848, oldConf=.
+
+2024-10-14 14:38:16,520 WARN RPC server is not started in RaftGroupService.
+
+2024-10-14 14:38:16,521 INFO Start the RaftGroupService successfully.
+
+2024-10-14 14:38:16,545 INFO onLeaderStart: term=1.
+
+2024-10-14 14:38:16,622 INFO The channel ff626a511784:7848 is in state: CONNECTING.
+
+2024-10-14 14:38:16,807 ERROR Fail to connect ff626a511784:7848, remoting exception: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 0.282850875s. [closed=[], open=[[buffered_nanos=283699917, waiting_for_connection]]].
+
+2024-10-14 14:38:16,807 ERROR Fail to connect ff626a511784:7848, remoting exception: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: DEADLINE_EXCEEDED: deadline exceeded after 0.300940291s. [closed=[], open=[[buffered_nanos=305227916, waiting_for_connection]]].
+
+2024-10-14 14:38:16,809 ERROR Fail to connect peer ff626a511784:7848 to get leader for group naming_persistent_service_v2.
+
+2024-10-14 14:38:16,810 ERROR Fail to connect peer ff626a511784:7848 to get leader for group naming_instance_metadata.
+
+2024-10-14 14:38:17,375 INFO The channel ff626a511784:7848 is in state: READY.
+
+2024-10-14 14:38:17,384 INFO The channel ff626a511784:7848 has successfully established.
+
+2024-10-14 14:59:32,643 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot/snapshot_1.
+
+2024-10-14 14:59:32,646 INFO Renaming /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot/temp to /home/nacos/data/protocol/raft/naming_persistent_service_v2/snapshot/snapshot_1.
+
+2024-10-14 15:07:29,492 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_service_metadata/snapshot/snapshot_1.
+
+2024-10-14 15:07:29,494 INFO Renaming /home/nacos/data/protocol/raft/naming_service_metadata/snapshot/temp to /home/nacos/data/protocol/raft/naming_service_metadata/snapshot/snapshot_1.
+
+2024-10-14 15:08:42,953 INFO Deleting snapshot /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot/snapshot_1.
+
+2024-10-14 15:08:42,954 INFO Renaming /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot/temp to /home/nacos/data/protocol/raft/naming_instance_metadata/snapshot/snapshot_1.
+
+2024-10-14 15:29:32,574 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 1 to 2, cost 3 ms.
+
+2024-10-14 15:37:29,474 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 1 to 2, cost 3 ms.
+
+2024-10-14 15:38:42,930 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 1 to 2, cost 1 ms.
+
+2024-10-14 15:59:32,611 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 1 ms.
+
+2024-10-14 16:07:29,497 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-10-14 16:08:42,964 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-10-14 16:29:32,636 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 2 ms.
+
+2024-10-14 16:37:29,512 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-10-14 16:38:42,975 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-10-14 16:59:32,610 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 3 ms.
+
+2024-10-14 17:07:29,477 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_service_metadata/log from log index 2 to 2, cost 1 ms.
+
+2024-10-14 17:08:42,940 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_instance_metadata/log from log index 2 to 2, cost 2 ms.
+
+2024-10-14 17:29:32,645 INFO Truncated prefix logs in data path: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log from log index 2 to 2, cost 2 ms.
+
+2024-10-14 17:31:25,358 INFO Node <naming_service_metadata/ff626a511784:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 17:31:25,372 INFO Fail to find the next candidate.
+
+2024-10-14 17:31:25,374 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 17:31:25,424 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_service_metadata/meta-data, term=1, votedFor=ff626a511784:7848, cost time=26 ms
+
+2024-10-14 17:31:25,425 INFO Shutting down FSMCaller...
+
+2024-10-14 17:31:25,427 INFO onShutdown.
+
+2024-10-14 17:31:25,438 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@6f141cdb[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 17:31:25,463 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@c99ac4c[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 17:31:25,466 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_service_metadata/ff626a511784:7848>'}.
+
+2024-10-14 17:31:25,466 INFO The number of active nodes decrement to 2.
+
+2024-10-14 17:31:25,472 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_service_metadata/ff626a511784:7848>'}.
+
+2024-10-14 17:31:25,479 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_service_metadata/ff626a511784:7848>'}.
+
+2024-10-14 17:31:25,481 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_service_metadata/ff626a511784:7848>'}.
+
+2024-10-14 17:31:25,485 INFO Node <naming_service_metadata/ff626a511784:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 17:31:25,494 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 17:31:25,496 INFO Node <naming_instance_metadata/ff626a511784:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 17:31:25,521 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 17:31:25,514 INFO Fail to find the next candidate.
+
+2024-10-14 17:31:25,549 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_instance_metadata/meta-data, term=1, votedFor=ff626a511784:7848, cost time=10 ms
+
+2024-10-14 17:31:25,549 INFO Shutting down FSMCaller...
+
+2024-10-14 17:31:25,550 INFO onShutdown.
+
+2024-10-14 17:31:25,550 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@3c2772de[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 17:31:25,550 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@7d9d42da[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 17:31:25,551 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_instance_metadata/ff626a511784:7848>'}.
+
+2024-10-14 17:31:25,551 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_instance_metadata/ff626a511784:7848>'}.
+
+2024-10-14 17:31:25,551 INFO The number of active nodes decrement to 1.
+
+2024-10-14 17:31:25,551 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_instance_metadata/ff626a511784:7848>'}.
+
+2024-10-14 17:31:25,552 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_instance_metadata/ff626a511784:7848>'}.
+
+2024-10-14 17:31:25,552 INFO Node <naming_instance_metadata/ff626a511784:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 17:31:25,559 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 17:31:25,563 INFO Node <naming_persistent_service_v2/ff626a511784:7848> shutdown, currTerm=1 state=STATE_LEADER.
+
+2024-10-14 17:31:25,567 INFO Fail to find the next candidate.
+
+2024-10-14 17:31:25,568 INFO onLeaderStop: status=Status[ESHUTDOWN<1007>: Raft node is going to quit.].
+
+2024-10-14 17:31:25,575 INFO Save raft meta, path=/home/nacos/data/protocol/raft/naming_persistent_service_v2/meta-data, term=1, votedFor=ff626a511784:7848, cost time=4 ms
+
+2024-10-14 17:31:25,575 INFO Shutting down FSMCaller...
+
+2024-10-14 17:31:25,576 INFO onShutdown.
+
+2024-10-14 17:31:25,576 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@5b6cdcfc[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 17:31:25,576 INFO ThreadPool is terminated: JRaft-Node-ScheduleThreadPool, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@5cdae4cd[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0].
+
+2024-10-14 17:31:25,576 INFO The number of active nodes decrement to 0.
+
+2024-10-14 17:31:25,589 INFO ThreadPool is terminated: JRaft-Global-ElectionTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@7deec9c9[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 17:31:25,591 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-ElectionTimer-<naming_persistent_service_v2/ff626a511784:7848>'}.
+
+2024-10-14 17:31:25,594 INFO DB destroyed, the db path is: /home/nacos/data/protocol/raft/naming_instance_metadata/log.
+
+2024-10-14 17:31:25,594 INFO DB destroyed, the db path is: /home/nacos/data/protocol/raft/naming_service_metadata/log.
+
+2024-10-14 17:31:25,595 INFO ThreadPool is terminated: JRaft-Global-VoteTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@25389c2[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 3].
+
+2024-10-14 17:31:25,595 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=5000, name='JRaft-VoteTimer-<naming_persistent_service_v2/ff626a511784:7848>'}.
+
+2024-10-14 17:31:25,599 INFO ThreadPool is terminated: JRaft-Global-StepDownTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@4645fc66[Shutting down, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 12066].
+
+2024-10-14 17:31:25,600 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=2500, name='JRaft-StepDownTimer-<naming_persistent_service_v2/ff626a511784:7848>'}.
+
+2024-10-14 17:31:25,605 INFO ThreadPool is terminated: JRaft-Global-SnapshotTimer, com.alipay.sofa.jraft.util.MetricScheduledThreadPoolExecutor@6182d35b[Shutting down, pool size = 2, active threads = 0, queued tasks = 0, completed tasks = 16].
+
+2024-10-14 17:31:25,606 INFO Destroy timer: RepeatedTimer{timeout=null, stopped=true, running=false, destroyed=true, invoking=false, timeoutMs=1800000, name='JRaft-SnapshotTimer-<naming_persistent_service_v2/ff626a511784:7848>'}.
+
+2024-10-14 17:31:25,606 INFO Node <naming_persistent_service_v2/ff626a511784:7848> shutdown, currTerm=1 state=STATE_SHUTTING.
+
+2024-10-14 17:31:25,607 INFO Stop the RaftGroupService successfully.
+
+2024-10-14 17:31:25,608 INFO Shutdown managed channel: ff626a511784:7848, ManagedChannelOrphanWrapper{delegate=ManagedChannelImpl{logId=10, target=ff626a511784:7848}}.
+
+2024-10-14 17:31:25,615 INFO DB destroyed, the db path is: /home/nacos/data/protocol/raft/naming_persistent_service_v2/log.
+
+2024-10-14 17:31:25,616 INFO The channel ff626a511784:7848 is in state: SHUTDOWN.
+
+2024-10-14 17:31:25,616 WARN This channel ff626a511784:7848 has started shutting down. Any new RPCs should fail immediately.
+
+2024-10-14 17:31:25,642 INFO Connection disconnected: /172.19.0.4:39430
+
+2024-10-14 17:31:25,670 INFO ThreadPool is terminated: JRaft-RPC-Processor, com.alipay.sofa.jraft.util.MetricThreadPoolExecutor@350545d8[Shutting down, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 8532].
+

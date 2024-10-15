@@ -8,6 +8,7 @@ import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -30,15 +31,16 @@ public class ChannelAccountController {
     @Resource
     ChannelAccountService service;
 
+//    @Value("${username}")
+    String username;
     @ApiOperation("测试接口")
     @GetMapping("/test/{id:.+}")
     public String test(@PathVariable("id")@NotNull Long id) {
-        System.out.println("起码开始了");
-        log.error("起码开始了");
-        log.error("起码开始了");
-        log.error("起码开始了");
-        log.error("起码开始了");
         return service.test(id);
+    }
+    @GetMapping("/test")
+    public String test() {
+        return username;
     }
     @ApiOperation("新建、更新渠道账号信息")
     @PostMapping("/save")

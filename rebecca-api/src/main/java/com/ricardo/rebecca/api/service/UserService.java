@@ -11,4 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface UserService extends IService<User> {
     User getUserById(Long id);
+
+    String test(Long id);
 }

@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Author Cypress
  * @Date 2024-10-14 21:17:26
  */
+@Service
 @DubboService
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
 @Autowired
@@ -25,5 +26,11 @@ private UserMapper userMapper;
         Assert.notNull(id, "用户ID不能为空");
         System.out.println("调用getUserById方法查询用户信息");
         return getById(id);
+    }
+
+    @Override
+    public String test(Long id) {
+
+        return "调通啦：id"+id;
     }
 }

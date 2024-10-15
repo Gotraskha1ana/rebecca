@@ -11,57 +11,69 @@
 
     <artifactId>rebecca-user</artifactId>
 
-<dependencies>
-    <!--dubbo-->
-    <dependency>
-        <groupId>org.apache.dubbo</groupId>
-        <artifactId>dubbo-spring-boot-starter</artifactId>
-    </dependency>
+    <dependencies>
+        <!--dubbo-->
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+        </dependency>
 
-    <!--         log依赖-->
-    <dependency>
-        <groupId>de.siegmar</groupId>
-        <artifactId>logback-gelf</artifactId>
-    </dependency>
-    <!--        加载.env文件依赖-->
-    <dependency>
-        <groupId>io.github.cdimascio</groupId>
-        <artifactId>java-dotenv</artifactId>
-    </dependency>
+        <!--         log依赖-->
+        <dependency>
+            <groupId>de.siegmar</groupId>
+            <artifactId>logback-gelf</artifactId>
+        </dependency>
+        <!--        加载.env文件依赖-->
+        <dependency>
+            <groupId>io.github.cdimascio</groupId>
+            <artifactId>java-dotenv</artifactId>
+        </dependency>
 
-    <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-    </dependency>
-    <dependency>
-        <groupId>com.baomidou</groupId>
-        <artifactId>mybatis-plus-boot-starter</artifactId>
-    </dependency>
-    <!--Knife4j包-->
-    <dependency>
-        <groupId>com.github.xiaoymin</groupId>
-        <artifactId>knife4j-spring-boot-starter</artifactId>
-    </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <!--Knife4j包-->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+        </dependency>
 
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-validation</artifactId>
-    </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
 
-    <dependency>
-        <groupId>com.ricardo.rebecca</groupId>
-        <artifactId>rebecca-common</artifactId>
-    </dependency>
+        <dependency>
+            <groupId>com.ricardo.rebecca</groupId>
+            <artifactId>rebecca-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ricardo.rebecca</groupId>
+            <artifactId>rebecca-api</artifactId>
+        </dependency>
 
-    <dependency>
-        <groupId>com.ricardo.rebecca</groupId>
-        <artifactId>rebecca-api</artifactId>
-    </dependency>
+        <!--fastjson包-->
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
+        </dependency>
 
-</dependencies>
+        <!--nacos-->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+        </dependency>
+    </dependencies>
+
+
 </project>

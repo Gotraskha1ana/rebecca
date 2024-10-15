@@ -1,0 +1,48 @@
+2024-10-15 12:53:43,545 INFO [dump] add formal task. groupKey=test+DEFAULT_GROUP
+
+2024-10-15 12:53:43,591 INFO [dump] process formal task. groupKey=test+DEFAULT_GROUP
+
+2024-10-15 12:53:43,826 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=test+DEFAULT_GROUP, newMd5=1d2033cc98f23ccfd753eb32982ac98c,oldMd5=,lastModifiedTs=1728968023413
+
+2024-10-15 12:59:40,855 INFO [dump] add formal task. groupKey=test+DEFAULT_GROUP
+
+2024-10-15 12:59:40,905 INFO [dump] process formal task. groupKey=test+DEFAULT_GROUP
+
+2024-10-15 12:59:40,913 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=test+DEFAULT_GROUP, newMd5=6265a20b16d3811279e6bc447070b6df,oldMd5=1d2033cc98f23ccfd753eb32982ac98c,lastModifiedTs=1728968380677
+
+2024-10-15 13:11:48,352 INFO [dump] add formal task. groupKey=com.ricardo.rebecca.api.service.UserService+mapping
+
+2024-10-15 13:11:48,356 INFO [dump] add formal task. groupKey=com.ricardo.rebecca.api.service.UserService:::provider:rebecca-user+dubbo
+
+2024-10-15 13:11:48,398 INFO [dump] process formal task. groupKey=com.ricardo.rebecca.api.service.UserService:::provider:rebecca-user+dubbo
+
+2024-10-15 13:11:48,422 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=com.ricardo.rebecca.api.service.UserService:::provider:rebecca-user+dubbo, newMd5=df63a0a58829b2972e3268ad0f10e17d,oldMd5=,lastModifiedTs=1728969108228
+
+2024-10-15 13:11:48,425 INFO [dump] process formal task. groupKey=com.ricardo.rebecca.api.service.UserService+mapping
+
+2024-10-15 13:11:48,436 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=com.ricardo.rebecca.api.service.UserService+mapping, newMd5=3cbf2c28dfa6a61a78ccf6e55c8688bc,oldMd5=,lastModifiedTs=1728969108228
+
+2024-10-15 13:16:09,354 INFO [dump] add formal task. groupKey=com.ricardo.rebecca.api.service.UserService:::provider:rebecca-user+dubbo
+
+2024-10-15 13:16:09,432 INFO [dump] process formal task. groupKey=com.ricardo.rebecca.api.service.UserService:::provider:rebecca-user+dubbo
+
+2024-10-15 13:16:09,434 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=com.ricardo.rebecca.api.service.UserService:::provider:rebecca-user+dubbo, newMd5=969fc8af35afc5f591016fbe233aeb36,oldMd5=df63a0a58829b2972e3268ad0f10e17d,lastModifiedTs=1728969369190
+
+2024-10-15 13:37:10,333 INFO [dump] add formal task. groupKey=com.ricardo.rebecca.api.service.UserService:::provider:rebecca-user+dubbo
+
+2024-10-15 13:37:10,385 INFO [dump] process formal task. groupKey=com.ricardo.rebecca.api.service.UserService:::provider:rebecca-user+dubbo
+
+2024-10-15 13:37:10,388 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=com.ricardo.rebecca.api.service.UserService:::provider:rebecca-user+dubbo, newMd5=b3f9f0b3e6d7836b68951c15921011fe,oldMd5=969fc8af35afc5f591016fbe233aeb36,lastModifiedTs=1728970630269
+
+2024-10-15 13:46:16,933 INFO [dump] add formal task. groupKey=com.ricardo.rebecca.api.service.UserService:::provider:rebecca-user+dubbo
+
+2024-10-15 13:46:16,933 INFO [dump] add formal task. groupKey=com.ricardo.rebecca.api.service.UserService+mapping
+
+2024-10-15 13:46:16,986 INFO [dump] process formal task. groupKey=com.ricardo.rebecca.api.service.UserService:::provider:rebecca-user+dubbo
+
+2024-10-15 13:46:17,003 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=com.ricardo.rebecca.api.service.UserService:::provider:rebecca-user+dubbo, newMd5=c5addf40facf81c8f0bf66cd457f31f5,oldMd5=,lastModifiedTs=1728971176575
+
+2024-10-15 13:46:17,007 INFO [dump] process formal task. groupKey=com.ricardo.rebecca.api.service.UserService+mapping
+
+2024-10-15 13:46:17,009 INFO [dump] md5 changed, update md5 and timestamp in jvm cache ,groupKey=com.ricardo.rebecca.api.service.UserService+mapping, newMd5=3cbf2c28dfa6a61a78ccf6e55c8688bc,oldMd5=,lastModifiedTs=1728971176575
+

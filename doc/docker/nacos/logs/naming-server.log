@@ -1,0 +1,298 @@
+2024-10-15 08:00:55,087 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2024-10-15 08:00:55,088 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2024-10-15 08:00:55,090 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2024-10-15 08:00:55,091 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2024-10-15 08:00:58,514 INFO Load instance extension handler []
+
+2024-10-15 12:57:44,863 INFO Client connection 1728968257461_192.168.65.1_52053 disconnect, remove instances and subscribers
+
+2024-10-15 12:57:54,591 INFO Client connection 1728968268218_192.168.65.1_27760 disconnect, remove instances and subscribers
+
+2024-10-15 12:58:54,665 INFO Client connection 1728968288352_192.168.65.1_54636 disconnect, remove instances and subscribers
+
+2024-10-15 13:00:47,815 INFO Client connection 1728968337291_192.168.65.1_53882 disconnect, remove instances and subscribers
+
+2024-10-15 13:05:23,446 INFO Client connection 1728968723397_192.168.65.1_39105 connect
+
+2024-10-15 13:05:23,825 INFO Client connection 1728968723666_192.168.65.1_18969 connect
+
+2024-10-15 13:11:47,676 INFO Client connection 1728969107670_192.168.65.1_34348 connect
+
+2024-10-15 13:11:47,840 INFO Client connection 1728969107831_192.168.65.1_44646 connect
+
+2024-10-15 13:11:48,036 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=0}, 1728969107831_192.168.65.1_44646
+
+2024-10-15 13:11:48,729 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='rebecca-user', ephemeral=true, revision=0}, 1728969107670_192.168.65.1_34348
+
+2024-10-15 13:12:19,721 INFO Client connection 1728968723397_192.168.65.1_39105 disconnect, remove instances and subscribers
+
+2024-10-15 13:12:20,031 INFO Client connection 1728968723666_192.168.65.1_18969 disconnect, remove instances and subscribers
+
+2024-10-15 13:12:20,049 INFO Client connection 1728968722218_192.168.65.1_23035 disconnect, remove instances and subscribers
+
+2024-10-15 13:12:21,697 INFO Client connection 1728968722528_192.168.65.1_41226 disconnect, remove instances and subscribers
+
+2024-10-15 13:12:21,700 INFO Client connection 1728968720638_192.168.65.1_64534 disconnect, remove instances and subscribers
+
+2024-10-15 13:12:26,400 INFO Client connection 1728969146388_192.168.65.1_25189 connect
+
+2024-10-15 13:12:26,563 INFO Client connection 1728969146556_192.168.65.1_21244 connect
+
+2024-10-15 13:14:32,391 INFO Client connection 1728969146388_192.168.65.1_25189 disconnect, remove instances and subscribers
+
+2024-10-15 13:14:32,694 INFO Client connection 1728969146556_192.168.65.1_21244 disconnect, remove instances and subscribers
+
+2024-10-15 13:14:32,698 INFO Client connection 1728969145321_192.168.65.1_52045 disconnect, remove instances and subscribers
+
+2024-10-15 13:14:33,858 INFO Client connection 1728969145512_192.168.65.1_17736 disconnect, remove instances and subscribers
+
+2024-10-15 13:14:33,860 INFO Client connection 1728969143588_192.168.65.1_53154 disconnect, remove instances and subscribers
+
+2024-10-15 13:14:48,195 INFO Client connection 1728969277168_192.168.65.1_65178 disconnect, remove instances and subscribers
+
+2024-10-15 13:14:48,199 INFO Client connection 1728969277460_192.168.65.1_51991 disconnect, remove instances and subscribers
+
+2024-10-15 13:15:05,668 INFO Client connection 1728969305646_192.168.65.1_27480 connect
+
+2024-10-15 13:15:06,001 INFO Client connection 1728969305976_192.168.65.1_59028 connect
+
+2024-10-15 13:15:49,691 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=1}, 1728969107831_192.168.65.1_44646
+
+2024-10-15 13:15:49,746 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='rebecca-user', ephemeral=true, revision=1}, 1728969107670_192.168.65.1_34348
+
+2024-10-15 13:16:01,891 INFO Client connection 1728969107670_192.168.65.1_34348 disconnect, remove instances and subscribers
+
+2024-10-15 13:16:02,206 INFO Client connection 1728969107831_192.168.65.1_44646 disconnect, remove instances and subscribers
+
+2024-10-15 13:16:02,209 INFO Client connection 1728969106476_192.168.65.1_19225 disconnect, remove instances and subscribers
+
+2024-10-15 13:16:03,805 INFO Client connection 1728969106792_192.168.65.1_43086 disconnect, remove instances and subscribers
+
+2024-10-15 13:16:08,753 INFO Client connection 1728969368745_192.168.65.1_59076 connect
+
+2024-10-15 13:16:08,959 INFO Client connection 1728969368935_192.168.65.1_51635 connect
+
+2024-10-15 13:16:09,074 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=2}, 1728969368935_192.168.65.1_51635
+
+2024-10-15 13:16:09,466 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='rebecca-user', ephemeral=true, revision=2}, 1728969368745_192.168.65.1_59076
+
+2024-10-15 13:16:39,904 INFO Client connection 1728969305646_192.168.65.1_27480 disconnect, remove instances and subscribers
+
+2024-10-15 13:16:40,210 INFO Client connection 1728969305976_192.168.65.1_59028 disconnect, remove instances and subscribers
+
+2024-10-15 13:16:40,219 INFO Client connection 1728969304442_192.168.65.1_38174 disconnect, remove instances and subscribers
+
+2024-10-15 13:16:41,846 INFO Client connection 1728969304734_192.168.65.1_40706 disconnect, remove instances and subscribers
+
+2024-10-15 13:16:46,836 INFO Client connection 1728969406791_192.168.65.1_30651 connect
+
+2024-10-15 13:16:46,990 INFO Client connection 1728969406981_192.168.65.1_50347 connect
+
+2024-10-15 13:18:12,333 INFO Client connection 1728969406791_192.168.65.1_30651 disconnect, remove instances and subscribers
+
+2024-10-15 13:18:12,669 INFO Client connection 1728969405608_192.168.65.1_29841 disconnect, remove instances and subscribers
+
+2024-10-15 13:18:12,674 INFO Client connection 1728969406981_192.168.65.1_50347 disconnect, remove instances and subscribers
+
+2024-10-15 13:18:14,290 INFO Client connection 1728969404521_192.168.65.1_53585 disconnect, remove instances and subscribers
+
+2024-10-15 13:18:14,290 INFO Client connection 1728969405824_192.168.65.1_40289 disconnect, remove instances and subscribers
+
+2024-10-15 13:18:18,955 INFO Client connection 1728969498947_192.168.65.1_33659 connect
+
+2024-10-15 13:18:19,098 INFO Client connection 1728969499092_192.168.65.1_35253 connect
+
+2024-10-15 13:18:22,843 INFO Client connection 1728969498947_192.168.65.1_33659 disconnect, remove instances and subscribers
+
+2024-10-15 13:18:23,470 INFO Client connection 1728969499092_192.168.65.1_35253 disconnect, remove instances and subscribers
+
+2024-10-15 13:18:23,472 INFO Client connection 1728969497768_192.168.65.1_55777 disconnect, remove instances and subscribers
+
+2024-10-15 13:18:23,892 INFO Client connection 1728969497994_192.168.65.1_50529 disconnect, remove instances and subscribers
+
+2024-10-15 13:18:23,893 INFO Client connection 1728969496682_192.168.65.1_57762 disconnect, remove instances and subscribers
+
+2024-10-15 13:18:39,644 INFO Client connection 1728969519631_192.168.65.1_63344 connect
+
+2024-10-15 13:18:39,814 INFO Client connection 1728969519804_192.168.65.1_16742 connect
+
+2024-10-15 13:26:13,800 INFO Client connection 1728969519631_192.168.65.1_63344 disconnect, remove instances and subscribers
+
+2024-10-15 13:26:14,112 INFO Client connection 1728969519804_192.168.65.1_16742 disconnect, remove instances and subscribers
+
+2024-10-15 13:26:14,114 INFO Client connection 1728969518253_192.168.65.1_62138 disconnect, remove instances and subscribers
+
+2024-10-15 13:26:15,942 INFO Client connection 1728969518695_192.168.65.1_46804 disconnect, remove instances and subscribers
+
+2024-10-15 13:26:15,943 INFO Client connection 1728969516037_192.168.65.1_28097 disconnect, remove instances and subscribers
+
+2024-10-15 13:26:19,883 INFO Client connection 1728969979874_192.168.65.1_33054 connect
+
+2024-10-15 13:26:20,053 INFO Client connection 1728969980042_192.168.65.1_37819 connect
+
+2024-10-15 13:35:44,052 INFO Client connection 1728969979874_192.168.65.1_33054 disconnect, remove instances and subscribers
+
+2024-10-15 13:35:44,321 INFO Client connection 1728969980042_192.168.65.1_37819 disconnect, remove instances and subscribers
+
+2024-10-15 13:35:44,327 INFO Client connection 1728969978814_192.168.65.1_34815 disconnect, remove instances and subscribers
+
+2024-10-15 13:35:46,018 INFO Client connection 1728969977683_192.168.65.1_59862 disconnect, remove instances and subscribers
+
+2024-10-15 13:35:46,032 INFO Client connection 1728969979016_192.168.65.1_61883 disconnect, remove instances and subscribers
+
+2024-10-15 13:35:51,724 INFO Client connection 1728970551705_192.168.65.1_21881 connect
+
+2024-10-15 13:35:52,012 INFO Client connection 1728970551991_192.168.65.1_57072 connect
+
+2024-10-15 13:36:07,849 INFO Client connection 1728970551705_192.168.65.1_21881 disconnect, remove instances and subscribers
+
+2024-10-15 13:36:08,150 INFO Client connection 1728970551991_192.168.65.1_57072 disconnect, remove instances and subscribers
+
+2024-10-15 13:36:08,151 INFO Client connection 1728970550572_192.168.65.1_63704 disconnect, remove instances and subscribers
+
+2024-10-15 13:36:09,798 INFO Client connection 1728970550773_192.168.65.1_31182 disconnect, remove instances and subscribers
+
+2024-10-15 13:36:09,802 INFO Client connection 1728970549410_192.168.65.1_51484 disconnect, remove instances and subscribers
+
+2024-10-15 13:36:16,305 INFO Client connection 1728970576286_192.168.65.1_28910 connect
+
+2024-10-15 13:36:16,521 INFO Client connection 1728970576487_192.168.65.1_47368 connect
+
+2024-10-15 13:36:50,290 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=3}, 1728969368935_192.168.65.1_51635
+
+2024-10-15 13:36:50,302 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='rebecca-user', ephemeral=true, revision=3}, 1728969368745_192.168.65.1_59076
+
+2024-10-15 13:37:02,439 INFO Client connection 1728969368745_192.168.65.1_59076 disconnect, remove instances and subscribers
+
+2024-10-15 13:37:02,746 INFO Client connection 1728969368935_192.168.65.1_51635 disconnect, remove instances and subscribers
+
+2024-10-15 13:37:02,749 INFO Client connection 1728969367394_192.168.65.1_33934 disconnect, remove instances and subscribers
+
+2024-10-15 13:37:04,352 INFO Client connection 1728969367608_192.168.65.1_60181 disconnect, remove instances and subscribers
+
+2024-10-15 13:37:04,354 INFO Client connection 1728969366227_192.168.65.1_63120 disconnect, remove instances and subscribers
+
+2024-10-15 13:37:09,913 INFO Client connection 1728970629895_192.168.65.1_38150 connect
+
+2024-10-15 13:37:10,078 INFO Client connection 1728970630068_192.168.65.1_61279 connect
+
+2024-10-15 13:37:10,197 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=4}, 1728970630068_192.168.65.1_61279
+
+2024-10-15 13:37:10,493 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='rebecca-user', ephemeral=true, revision=4}, 1728970629895_192.168.65.1_38150
+
+2024-10-15 13:42:21,066 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=5}, 1728970630068_192.168.65.1_61279
+
+2024-10-15 13:42:21,076 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='rebecca-user', ephemeral=true, revision=5}, 1728970629895_192.168.65.1_38150
+
+2024-10-15 13:42:23,115 INFO Client connection 1728970576286_192.168.65.1_28910 disconnect, remove instances and subscribers
+
+2024-10-15 13:42:23,160 INFO Client connection 1728970629895_192.168.65.1_38150 disconnect, remove instances and subscribers
+
+2024-10-15 13:42:23,597 INFO Client connection 1728970576487_192.168.65.1_47368 disconnect, remove instances and subscribers
+
+2024-10-15 13:42:23,598 INFO Client connection 1728970574930_192.168.65.1_20315 disconnect, remove instances and subscribers
+
+2024-10-15 13:42:23,600 INFO Client connection 1728970628816_192.168.65.1_52301 disconnect, remove instances and subscribers
+
+2024-10-15 13:42:23,602 INFO Client connection 1728970630068_192.168.65.1_61279 disconnect, remove instances and subscribers
+
+2024-10-15 13:42:25,046 INFO Client connection 1728970573140_192.168.65.1_62162 disconnect, remove instances and subscribers
+
+2024-10-15 13:42:25,050 INFO Client connection 1728970575147_192.168.65.1_62212 disconnect, remove instances and subscribers
+
+2024-10-15 13:42:25,120 INFO Client connection 1728970627512_192.168.65.1_59670 disconnect, remove instances and subscribers
+
+2024-10-15 13:42:25,121 INFO Client connection 1728970629033_192.168.65.1_24350 disconnect, remove instances and subscribers
+
+2024-10-15 13:42:38,346 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2024-10-15 13:42:38,469 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2024-10-15 13:42:39,102 ERROR [HEALTH-CHECK-V2] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.processTask(TcpHealthCheckProcessor.java:122)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.run(TcpHealthCheckProcessor.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2024-10-15 13:44:08,916 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2024-10-15 13:44:08,917 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2024-10-15 13:44:08,928 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2024-10-15 13:44:08,929 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2024-10-15 13:44:13,577 INFO Load instance extension handler []
+
+2024-10-15 13:46:15,510 INFO Client connection 1728971175476_192.168.65.1_60043 connect
+
+2024-10-15 13:46:15,628 INFO Client connection 1728971175620_192.168.65.1_18759 connect
+
+2024-10-15 13:46:15,673 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=0}, 1728971175620_192.168.65.1_18759
+
+2024-10-15 13:46:17,362 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='rebecca-user', ephemeral=true, revision=0}, 1728971175476_192.168.65.1_60043
+
+2024-10-15 13:46:25,463 INFO Client connection 1728971174747_192.168.65.1_57550 disconnect, remove instances and subscribers
+
+2024-10-15 13:46:25,480 INFO Client connection 1728971173583_192.168.65.1_60480 disconnect, remove instances and subscribers
+
+2024-10-15 13:46:41,985 INFO Client connection 1728971191023_192.168.65.1_61222 disconnect, remove instances and subscribers
+
+2024-10-15 13:46:42,000 INFO Client connection 1728971191346_192.168.65.1_35814 disconnect, remove instances and subscribers
+
+2024-10-15 13:47:03,317 INFO Client connection 1728971223296_192.168.65.1_61863 connect
+
+2024-10-15 13:47:03,548 INFO Client connection 1728971223479_192.168.65.1_62505 connect
+
+2024-10-15 13:47:25,210 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='providers:com.ricardo.rebecca.api.service.UserService::', ephemeral=true, revision=1}, 1728971175620_192.168.65.1_18759
+
+2024-10-15 13:47:25,272 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='rebecca-user', ephemeral=true, revision=1}, 1728971175476_192.168.65.1_60043
+
+2024-10-15 13:47:29,407 INFO Client connection 1728971175476_192.168.65.1_60043 disconnect, remove instances and subscribers
+
+2024-10-15 13:47:29,414 INFO Client connection 1728971174403_192.168.65.1_46230 disconnect, remove instances and subscribers
+
+2024-10-15 13:47:29,417 INFO Client connection 1728971175620_192.168.65.1_18759 disconnect, remove instances and subscribers
+
+2024-10-15 13:47:29,444 INFO Client connection 1728971222176_192.168.65.1_43240 disconnect, remove instances and subscribers
+
+2024-10-15 13:47:29,445 INFO Client connection 1728971223296_192.168.65.1_61863 disconnect, remove instances and subscribers
+
+2024-10-15 13:47:29,447 INFO Client connection 1728971223479_192.168.65.1_62505 disconnect, remove instances and subscribers
+
+2024-10-15 13:47:31,061 INFO Client connection 1728971174747_192.168.65.1_39759 disconnect, remove instances and subscribers
+
+2024-10-15 13:47:31,065 INFO Client connection 1728971222376_192.168.65.1_49794 disconnect, remove instances and subscribers
+
+2024-10-15 13:48:42,469 WARN namespace : public, [DEFAULT_GROUP@@rebecca-user] services are automatically cleaned
+
+2024-10-15 13:48:42,494 WARN namespace : public, [DEFAULT_GROUP@@providers:com.ricardo.rebecca.api.service.UserService::] services are automatically cleaned
+
+2024-10-15 15:42:05,769 WARN [NamingServerHttpClientManager] Start destroying HTTP-Client
+
+2024-10-15 15:42:06,184 WARN [NamingServerHttpClientManager] Destruction of the end
+
+2024-10-15 15:42:06,804 ERROR [HEALTH-CHECK-V2] error while processing NIO task
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.processTask(TcpHealthCheckProcessor.java:122)
+	at com.alibaba.nacos.naming.healthcheck.v2.processor.TcpHealthCheckProcessor.run(TcpHealthCheckProcessor.java:139)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)

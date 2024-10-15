@@ -18,6 +18,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2024/10/14 20:57
  */
 @Slf4j
+@EnableDubbo
 @SpringBootApplication
 public class RebeccaUserApplication implements CommandLineRunner {
     @Value("${server.port}")

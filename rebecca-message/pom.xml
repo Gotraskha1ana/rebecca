@@ -58,12 +58,22 @@
             <groupId>com.ricardo.rebecca</groupId>
             <artifactId>rebecca-common</artifactId>
         </dependency>
-
         <dependency>
             <groupId>com.ricardo.rebecca</groupId>
             <artifactId>rebecca-api</artifactId>
         </dependency>
 
+        <!--fastjson包-->
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
+        </dependency>
+
+        <!--nacos-->
+        <dependency>
+            <groupId>com.alibaba.nacos</groupId>
+            <artifactId>nacos-client</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

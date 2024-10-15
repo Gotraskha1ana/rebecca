@@ -1,5 +1,6 @@
 package com.ricardo.rebecca.message.service;
 
+import cn.hutool.core.util.ObjUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.ricardo.rebecca.api.dto.SaveAccountDTO;
 import com.ricardo.rebecca.api.entity.ChannelAccount;
@@ -18,8 +19,9 @@ import org.springframework.stereotype.Service;
  * @Date 2024/10/14 20:46
  */
 @Service
+//@DubboService
 public class ChannelAccountServiceImpl extends ServiceImpl<ChannelAccountMapper, ChannelAccount> implements ChannelAccountService {
-    @DubboReference(url = "dubbo://192.168.1.103:20881/com.ricardo.rebecca.api.service")
+    @DubboReference(url = "dubbo://192.168.64.1:20880/com.ricardo.rebecca.api.service.UserService?serialization=fastjson2")
     UserService userService;
 
     @Override
