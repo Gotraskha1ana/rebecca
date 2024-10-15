@@ -39,6 +39,6 @@ build/
 
 ### Logs ###
 /logs
-
+/doc/docker/nacos/logs
 ### ENVIRONMENT ###
 .env
