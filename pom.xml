@@ -46,7 +46,6 @@
         <hutool-all.version>5.8.25</hutool-all.version>
         <mybatis-plus.version>3.5.7</mybatis-plus.version>
         <dotenv.version>5.2.2</dotenv.version>
-        <dubbo.version>3.3.0</dubbo.version>
 
         <logback-gelf.version>3.0.0</logback-gelf.version>
         <springfox-boot-starter.version>3.0.0</springfox-boot-starter.version>
@@ -89,28 +88,23 @@
                 <version>${dotenv.version}</version>
             </dependency>
 
-            <!--dubbo-->
-            <dependency>
-                <groupId>org.apache.dubbo</groupId>
-                <artifactId>dubbo-spring-boot-starter</artifactId>
-                <version>${dubbo.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.dubbo</groupId>
-                <artifactId>dubbo-nacos-spring-boot-starter</artifactId>
-                <version>${dubbo.version}</version>
-            </dependency>
             <!--nacos-->
             <dependency>
                 <groupId>com.alibaba.boot</groupId>
                 <artifactId>nacos-config-spring-boot-starter</artifactId>
                 <version>${nacos.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>com.alibaba.boot</groupId>
                 <artifactId>nacos-discovery-spring-boot-starter</artifactId>
                 <version>${nacos.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            </dependency>
+
             <!--hutool工具包-->
             <dependency>
                 <groupId>cn.hutool</groupId>

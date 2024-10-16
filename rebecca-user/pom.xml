@@ -12,12 +12,6 @@
     <artifactId>rebecca-user</artifactId>
 
     <dependencies>
-        <!--dubbo-->
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-        </dependency>
-
         <!--         log依赖-->
         <dependency>
             <groupId>de.siegmar</groupId>
@@ -66,16 +60,6 @@
         <dependency>
             <groupId>com.alibaba.fastjson2</groupId>
             <artifactId>fastjson2</artifactId>
-        </dependency>
-
-        <!--dubbo-->
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-nacos-spring-boot-starter</artifactId>
         </dependency>
 
         <!--nacos-->

@@ -1,34 +1,10 @@
-#region DUBBO
-dubbo:
-      application:
-            name: rebecca-message-dubbo
-            logger: logback
-      protocol:
-            name: dubbo
-            port: -1
-            serialization: fastjson2
-      registry:
-            address: nacos://localhost:8848
-            group: dubbo
-            parameters:
-                  username: nacos
-                  password: nacos
-#                  register-consumer-url: true #是否注册消费者（默认为false）
-                  #      namespace: 5cbb70a5-xxx-xxx-xxx-d43479ae0932
-                  preserved:
-                        heart:
-                              beat:
-                                    timeout: 15000 #该实例在不发送心跳后，从健康到不健康的时间 默认值
-                                    interval: 5000 #该实例在客户端上报心跳的间隔时间 默认值
-            register-mode: instance # 注册模式 仅应用/仅接口/我全都要
-#endregion
 
 #region nacos
-#nacos:
-#      config:
-#            server-addr: 127.0.0.1:8848
-#      discovery:
-#            server-addr: 127.0.0.1:8848
+nacos:
+      config:
+            server-addr: 127.0.0.1:8848
+      discovery:
+            server-addr: 127.0.0.1:8848
 #endregion
 
 #region Spring

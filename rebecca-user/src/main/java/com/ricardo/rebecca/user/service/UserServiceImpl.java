@@ -6,8 +6,6 @@ import com.ricardo.rebecca.api.service.ChannelAccountService;
 import com.ricardo.rebecca.user.mapper.UserMapper;
 import com.ricardo.rebecca.api.service.UserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.apache.dubbo.config.annotation.DubboReference;
-import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -18,9 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Date 2024-10-14 21:17:26
  */
 @Service
-@DubboService
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
-    @DubboReference
     ChannelAccountService channelAccountService;
 
     @Override

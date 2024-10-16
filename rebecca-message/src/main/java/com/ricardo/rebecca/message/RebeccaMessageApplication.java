@@ -4,7 +4,6 @@ import com.alibaba.nacos.spring.context.annotation.config.NacosPropertySource;
 import com.alibaba.nacos.spring.context.annotation.discovery.EnableNacosDiscovery;
 import com.ricardo.rebecca.common.constant.RebeccaConstant;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -20,8 +19,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2024/10/14 20:45
  */
 @Slf4j
-@EnableDubbo
 @NacosPropertySource(dataId = "example", autoRefreshed = true)
+@EnableNacosDiscovery
 @SpringBootApplication
 public class RebeccaMessageApplication implements CommandLineRunner {
     @Value("${server.port}")

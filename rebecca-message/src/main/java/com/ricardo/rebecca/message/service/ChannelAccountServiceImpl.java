@@ -8,8 +8,6 @@ import com.ricardo.rebecca.api.entity.User;
 import com.ricardo.rebecca.api.service.ChannelAccountService;
 import com.ricardo.rebecca.api.service.UserService;
 import com.ricardo.rebecca.message.mapper.ChannelAccountMapper;
-import org.apache.dubbo.config.annotation.DubboReference;
-import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.stereotype.Service;
 
 /**
@@ -19,9 +17,8 @@ import org.springframework.stereotype.Service;
  * @Date 2024/10/14 20:46
  */
 @Service
-@DubboService
+
 public class ChannelAccountServiceImpl extends ServiceImpl<ChannelAccountMapper, ChannelAccount> implements ChannelAccountService {
-    @DubboReference
     UserService userService;
 
     @Override

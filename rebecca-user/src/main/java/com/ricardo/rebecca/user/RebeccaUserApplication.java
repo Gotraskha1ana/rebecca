@@ -3,7 +3,6 @@ package com.ricardo.rebecca.user;
 import com.alibaba.nacos.spring.context.annotation.discovery.EnableNacosDiscovery;
 import com.ricardo.rebecca.common.constant.RebeccaConstant;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -19,7 +18,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2024/10/14 20:57
  */
 @Slf4j
-@EnableDubbo
 @SpringBootApplication
 public class RebeccaUserApplication implements CommandLineRunner {
     @Value("${server.port}")

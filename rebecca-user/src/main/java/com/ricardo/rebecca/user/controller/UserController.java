@@ -2,7 +2,6 @@ package com.ricardo.rebecca.user.controller;
 
 import com.ricardo.rebecca.api.service.ChannelAccountService;
 import com.ricardo.rebecca.api.service.UserService;
-import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

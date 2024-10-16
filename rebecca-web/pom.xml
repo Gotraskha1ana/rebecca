@@ -12,12 +12,6 @@
     <artifactId>rebecca-web</artifactId>
 
     <dependencies>
-        <!--dubbo-->
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>com.ricardo.rebecca</groupId>
             <artifactId>rebecca-common</artifactId>
