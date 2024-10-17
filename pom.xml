@@ -95,14 +95,15 @@
                 <version>${nacos.version}</version>
             </dependency>
 
-            <dependency>
-                <groupId>com.alibaba.boot</groupId>
-                <artifactId>nacos-discovery-spring-boot-starter</artifactId>
-                <version>${nacos.version}</version>
-            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.alibaba.boot</groupId>-->
+<!--                <artifactId>nacos-discovery-spring-boot-starter</artifactId>-->
+<!--                <version>${nacos.version}</version>-->
+<!--            </dependency>-->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+                <version>2023.0.1.2</version>
             </dependency>
 
             <!--hutool工具包-->

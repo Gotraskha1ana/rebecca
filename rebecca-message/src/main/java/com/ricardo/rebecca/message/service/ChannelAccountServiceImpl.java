@@ -8,7 +8,10 @@ import com.ricardo.rebecca.api.entity.User;
 import com.ricardo.rebecca.api.service.ChannelAccountService;
 import com.ricardo.rebecca.api.service.UserService;
 import com.ricardo.rebecca.message.mapper.ChannelAccountMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * @Class ChannelAccountServiceImpl
@@ -17,14 +20,15 @@ import org.springframework.stereotype.Service;
  * @Date 2024/10/14 20:46
  */
 @Service
-
 public class ChannelAccountServiceImpl extends ServiceImpl<ChannelAccountMapper, ChannelAccount> implements ChannelAccountService {
+//    @Autowired
     UserService userService;
 
     @Override
     public Boolean saveOrUpdate(SaveAccountDTO dto) {
         System.out.println("调用userService获取用户信息");
         User user = userService.getUserById(dto.getUserId());
+
         System.out.println("用户信息：" + user);
         System.out.println("调用saveOrUpdate方法创建渠道账号信息");
         return true;

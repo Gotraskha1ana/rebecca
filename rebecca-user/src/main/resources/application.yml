@@ -1,11 +1,11 @@
-
-#region nacos
-nacos:
-      config:
-            server-addr: 127.0.0.1:8848
-      discovery:
-            server-addr: 127.0.0.1:8848
-#endregion
+#
+##region nacos
+#nacos:
+#      config:
+#            server-addr: 127.0.0.1:8848
+#      discovery:
+#            server-addr: 127.0.0.1:8848
+##endregion
 
 #region Spring
 spring:
@@ -13,6 +13,10 @@ spring:
             active: dev # 激活的环境
       application:
             name: rebecca-user-spring # 应用名称
+      cloud:
+            nacos:
+                  discovery:
+                        server-addr: 127.0.0.1:8848
       #region Datasource
       datasource:
             # 数据库配置

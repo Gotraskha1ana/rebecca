@@ -19,8 +19,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @Date 2024/10/14 20:45
  */
 @Slf4j
-@NacosPropertySource(dataId = "example", autoRefreshed = true)
-@EnableNacosDiscovery
+//@NacosPropertySource(dataId = "example", autoRefreshed = true)
 @SpringBootApplication
 public class RebeccaMessageApplication implements CommandLineRunner {
     @Value("${server.port}")
